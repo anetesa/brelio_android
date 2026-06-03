@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Brelio" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/female_background</item>
+        <item name="android:navigationBarColor">@color/female_surface</item>
+    </style>
+</resources>

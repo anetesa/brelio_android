@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="appointment_statuses">
+        <item>@string/status_pending</item>
+        <item>@string/status_confirmed</item>
+        <item>@string/status_completed</item>
+        <item>@string/status_cancelled</item>
+        <item>@string/status_no_show</item>
+    </string-array>
+
+    <string-array name="payment_methods">
+        <item>@string/payment_cash</item>
+        <item>@string/payment_card</item>
+    </string-array>
+</resources>
