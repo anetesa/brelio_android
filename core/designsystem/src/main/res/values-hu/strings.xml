@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Brelio</string>
+    <string name="app_tagline">Egyszerű szalonkezelés</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Főoldal</string>
+    <string name="nav_calendar">Naptár</string>
+    <string name="nav_requests">Kérések</string>
+    <string name="nav_clients">Ügyfelek</string>
+    <string name="nav_settings">Beállítások</string>
+
+    <!-- Auth - Sign In -->
+    <string name="auth_sign_in">Bejelentkezés</string>
+    <string name="auth_sign_in_title">Üdv újra!</string>
+    <string name="auth_sign_in_subtitle">Jelentkezzen be fiókjába</string>
+    <string name="auth_email">Email</string>
+    <string name="auth_email_hint">Adja meg az email címét</string>
+    <string name="auth_password">Jelszó</string>
+    <string name="auth_password_hint">Adja meg a jelszavát</string>
+    <string name="auth_forgot_password">Elfelejtette a jelszavát?</string>
+    <string name="auth_sign_in_button">Bejelentkezés</string>
+    <string name="auth_no_account">Nincs fiókja?</string>
+    <string name="auth_sign_up_link">Regisztráció</string>
+    <string name="auth_show_password">Jelszó megjelenítése</string>
+    <string name="auth_hide_password">Jelszó elrejtése</string>
+
+    <!-- Auth - Sign Up -->
+    <string name="auth_sign_up">Regisztráció</string>
+    <string name="auth_sign_up_title">Fiók létrehozása</string>
+    <string name="auth_sign_up_subtitle">Kezdje el szalonja kezelését</string>
+    <string name="auth_name">Teljes név</string>
+    <string name="auth_name_hint">Adja meg teljes nevét</string>
+    <string name="auth_confirm_password">Jelszó megerősítése</string>
+    <string name="auth_confirm_password_hint">Adja meg újra a jelszavát</string>
+    <string name="auth_sign_up_button">Fiók létrehozása</string>
+    <string name="auth_have_account">Már van fiókja?</string>
+    <string name="auth_sign_in_link">Bejelentkezés</string>
+    <string name="auth_terms_agree">A regisztrációval elfogadja a</string>
+    <string name="auth_terms">Szolgáltatási feltételeket</string>
+    <string name="auth_privacy">Adatvédelmi szabályzatot</string>
+    <string name="auth_and">és</string>
+
+    <!-- Auth - Reset Password -->
+    <string name="auth_reset_password">Jelszó visszaállítása</string>
+    <string name="auth_reset_password_title">Elfelejtette a jelszavát?</string>
+    <string name="auth_reset_password_subtitle">Adja meg email címét, és küldünk egy visszaállító linket</string>
+    <string name="auth_reset_password_button">Link küldése</string>
+    <string name="auth_reset_password_success">Link elküldve! Ellenőrizze az emailjeit.</string>
+    <string name="auth_back_to_sign_in">Vissza a bejelentkezéshez</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Foglaláskezelés</string>
+    <string name="onboarding_desc_1">Kezelje az időpontokat könnyedén. Fogadjon foglalásokat, kövesse a beosztást, és csökkentse a meg nem jelenéseket automatikus emlékeztetőkkel.</string>
+    <string name="onboarding_title_2">Ügyfél CRM</string>
+    <string name="onboarding_desc_2">Építsen tartós kapcsolatokat. Vezessen részletes ügyfélprofilokat, kövesse a látogatási előzményeket és személyre szabja az élményeket.</string>
+    <string name="onboarding_title_3">Okos elemzések</string>
+    <string name="onboarding_desc_3">Fejlessze üzletét adatokkal. Kövesse a bevételt, figyelje a trendeket, és hozzon megalapozott döntéseket.</string>
+    <string name="onboarding_get_started">Kezdjük</string>
+    <string name="onboarding_next">Tovább</string>
+    <string name="onboarding_skip">Kihagyás</string>
+
+    <!-- Home / Dashboard -->
+    <string name="home_title">Áttekintés</string>
+    <string name="home_greeting">Szia, %1$s!</string>
+    <string name="home_today_appointments">Mai időpontok</string>
+    <string name="home_no_appointments">Nincsenek mai időpontok</string>
+    <string name="home_upcoming">Közelgő</string>
+    <string name="home_recent_activity">Legutóbbi tevékenység</string>
+    <string name="home_view_all">Összes megtekintése</string>
+    <string name="home_quick_actions">Gyors műveletek</string>
+    <string name="home_new_appointment">Új időpont</string>
+    <string name="home_new_client">Új ügyfél</string>
+    <string name="home_stats">Statisztikák</string>
+
+    <!-- Stats -->
+    <string name="stat_revenue">Bevétel</string>
+    <string name="stat_clients">Ügyfelek</string>
+    <string name="stat_appointments">Időpontok</string>
+    <string name="stat_no_shows">Meg nem jelenések</string>
+    <string name="stat_today">Ma</string>
+    <string name="stat_this_week">Ez a hét</string>
+    <string name="stat_this_month">Ez a hónap</string>
+    <string name="stat_total">Összesen</string>
+    <string name="stat_average_rating">Átlagos értékelés</string>
+    <string name="stat_completion_rate">Teljesítési arány</string>
+
+    <!-- Calendar -->
+    <string name="calendar_title">Naptár</string>
+    <string name="calendar_today">Ma</string>
+    <string name="calendar_day_view">Nap</string>
+    <string name="calendar_week_view">Hét</string>
+    <string name="calendar_month_view">Hónap</string>
+    <string name="calendar_no_events">Nincsenek események erre a napra</string>
+    <string name="calendar_add_event">Esemény hozzáadása</string>
+    <string name="calendar_all_day">Egész nap</string>
+
+    <!-- Day Names -->
+    <string name="day_monday">Hétfő</string>
+    <string name="day_tuesday">Kedd</string>
+    <string name="day_wednesday">Szerda</string>
+    <string name="day_thursday">Csütörtök</string>
+    <string name="day_friday">Péntek</string>
+    <string name="day_saturday">Szombat</string>
+    <string name="day_sunday">Vasárnap</string>
+
+    <!-- Day Names Short -->
+    <string name="day_mon">Hé</string>
+    <string name="day_tue">Ke</string>
+    <string name="day_wed">Sze</string>
+    <string name="day_thu">Csü</string>
+    <string name="day_fri">Pé</string>
+    <string name="day_sat">Szo</string>
+    <string name="day_sun">Vas</string>
+
+    <!-- Month Names -->
+    <string name="month_january">Január</string>
+    <string name="month_february">Február</string>
+    <string name="month_march">Március</string>
+    <string name="month_april">Április</string>
+    <string name="month_may">Május</string>
+    <string name="month_june">Június</string>
+    <string name="month_july">Július</string>
+    <string name="month_august">Augusztus</string>
+    <string name="month_september">Szeptember</string>
+    <string name="month_october">Október</string>
+    <string name="month_november">November</string>
+    <string name="month_december">December</string>
+
+    <!-- Requests -->
+    <string name="requests_title">Kérések</string>
+    <string name="requests_pending">Függőben lévő kérések</string>
+    <string name="requests_no_pending">Nincsenek függőben lévő kérések</string>
+    <string name="requests_accept">Elfogadás</string>
+    <string name="requests_decline">Elutasítás</string>
+    <string name="requests_accepted">Elfogadva</string>
+    <string name="requests_declined">Elutasítva</string>
+
+    <!-- Clients -->
+    <string name="clients_title">Ügyfelek</string>
+    <string name="clients_search">Ügyfelek keresése…</string>
+    <string name="clients_add">Ügyfél hozzáadása</string>
+    <string name="clients_no_clients">Még nincsenek ügyfelek</string>
+    <string name="clients_no_results">Nem találhatók ügyfelek</string>
+    <string name="clients_total">Összes ügyfél</string>
+    <string name="clients_sort_name">Rendezés név szerint</string>
+    <string name="clients_sort_recent">Rendezés utolsó látogatás szerint</string>
+    <string name="clients_tab_info">Információ</string>
+    <string name="clients_tab_history">Előzmények</string>
+    <string name="clients_tab_notes">Jegyzetek</string>
+
+    <!-- Client Fields -->
+    <string name="client_name">Név</string>
+    <string name="client_phone">Telefon</string>
+    <string name="client_email">Email</string>
+    <string name="client_notes">Jegyzetek</string>
+    <string name="client_birthday">Születésnap</string>
+    <string name="client_address">Cím</string>
+    <string name="client_since">Ügyfél óta</string>
+    <string name="client_last_visit">Utolsó látogatás</string>
+    <string name="client_total_visits">Összes látogatás</string>
+    <string name="client_total_spent">Összes költés</string>
+    <string name="client_favorite_service">Kedvenc szolgáltatás</string>
+    <string name="client_no_history">Nincs látogatási előzmény</string>
+    <string name="client_delete_confirm">Biztosan törölni szeretné ezt az ügyfelet?</string>
+
+    <!-- Appointments -->
+    <string name="appointment_title">Időpont</string>
+    <string name="appointment_new">Új időpont</string>
+    <string name="appointment_edit">Időpont szerkesztése</string>
+    <string name="appointment_details">Időpont részletei</string>
+    <string name="appointment_service">Szolgáltatás</string>
+    <string name="appointment_date">Dátum</string>
+    <string name="appointment_time">Idő</string>
+    <string name="appointment_duration">Időtartam</string>
+    <string name="appointment_price">Ár</string>
+    <string name="appointment_notes">Jegyzetek</string>
+    <string name="appointment_status">Állapot</string>
+    <string name="appointment_select_client">Ügyfél kiválasztása</string>
+    <string name="appointment_select_service">Szolgáltatás kiválasztása</string>
+    <string name="appointment_select_date">Dátum kiválasztása</string>
+    <string name="appointment_select_time">Idő kiválasztása</string>
+    <string name="appointment_cancel_confirm">Biztosan lemondja ezt az időpontot?</string>
+    <string name="appointment_delete_confirm">Biztosan törölni szeretné ezt az időpontot?</string>
+
+    <!-- Appointment Statuses -->
+    <string name="status_confirmed">Megerősítve</string>
+    <string name="status_pending">Függőben</string>
+    <string name="status_cancelled">Lemondva</string>
+    <string name="status_no_show">Meg nem jelent</string>
+    <string name="status_completed">Befejezve</string>
+
+    <!-- Services -->
+    <string name="services_title">Szolgáltatások</string>
+    <string name="services_add">Szolgáltatás hozzáadása</string>
+    <string name="services_edit">Szolgáltatás szerkesztése</string>
+    <string name="service_name">Szolgáltatás neve</string>
+    <string name="service_duration">Időtartam</string>
+    <string name="service_price">Ár</string>
+    <string name="service_category">Kategória</string>
+    <string name="service_description">Leírás</string>
+    <string name="services_no_services">Még nincsenek hozzáadott szolgáltatások</string>
+
+    <!-- Payment -->
+    <string name="payment_cash">Készpénz</string>
+    <string name="payment_card">Kártya</string>
+    <string name="payment_paid">Fizetve</string>
+    <string name="payment_unpaid">Fizetetlen</string>
+    <string name="payment_method">Fizetési mód</string>
+    <string name="payment_amount">Összeg</string>
+    <string name="payment_status">Fizetési állapot</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Beállítások</string>
+    <string name="settings_salon_profile">Szalon profil</string>
+    <string name="settings_salon_name">Szalon neve</string>
+    <string name="settings_salon_address">Cím</string>
+    <string name="settings_salon_phone">Telefon</string>
+    <string name="settings_working_hours">Nyitvatartás</string>
+    <string name="settings_theme">Téma</string>
+    <string name="settings_language">Nyelv</string>
+    <string name="settings_notifications">Értesítések</string>
+    <string name="settings_notifications_push">Push értesítések</string>
+    <string name="settings_notifications_email">Email értesítések</string>
+    <string name="settings_notifications_sms">SMS értesítések</string>
+    <string name="settings_notifications_reminders">Időpont emlékeztetők</string>
+    <string name="settings_account">Fiók</string>
+    <string name="settings_sign_out">Kijelentkezés</string>
+    <string name="settings_sign_out_confirm">Biztosan ki szeretne jelentkezni?</string>
+    <string name="settings_delete_account">Fiók törlése</string>
+    <string name="settings_delete_account_confirm">Ez a művelet visszavonhatatlan. Minden adata törlésre kerül.</string>
+    <string name="settings_about">Az alkalmazásról</string>
+    <string name="settings_version">Verzió</string>
+    <string name="settings_rate_app">Alkalmazás értékelése</string>
+    <string name="settings_feedback">Visszajelzés küldése</string>
+    <string name="settings_privacy_policy">Adatvédelmi szabályzat</string>
+    <string name="settings_terms_of_service">Szolgáltatási feltételek</string>
+
+    <!-- Theme Names -->
+    <string name="theme_classic">Klasszikus (Női)</string>
+    <string name="theme_modern">Modern (Férfi)</string>
+    <string name="theme_system">Rendszer alapértelmezett</string>
+
+    <!-- Language Names -->
+    <string name="lang_english">English</string>
+    <string name="lang_polish">Polski</string>
+    <string name="lang_russian">Русский</string>
+    <string name="lang_ukrainian">Українська</string>
+    <string name="lang_czech">Čeština</string>
+    <string name="lang_slovak">Slovenčina</string>
+    <string name="lang_hungarian">Magyar</string>
+    <string name="lang_german">Deutsch</string>
+
+    <!-- Common Actions -->
+    <string name="action_save">Mentés</string>
+    <string name="action_cancel">Mégse</string>
+    <string name="action_delete">Törlés</string>
+    <string name="action_edit">Szerkesztés</string>
+    <string name="action_back">Vissza</string>
+    <string name="action_done">Kész</string>
+    <string name="action_search">Keresés</string>
+    <string name="action_confirm">Megerősítés</string>
+    <string name="action_retry">Újrapróbálás</string>
+    <string name="action_ok">OK</string>
+    <string name="action_yes">Igen</string>
+    <string name="action_no">Nem</string>
+    <string name="action_close">Bezárás</string>
+    <string name="action_add">Hozzáadás</string>
+    <string name="action_remove">Eltávolítás</string>
+    <string name="action_select">Kiválasztás</string>
+    <string name="action_continue">Folytatás</string>
+    <string name="action_apply">Alkalmazás</string>
+    <string name="action_clear">Törlés</string>
+    <string name="action_refresh">Frissítés</string>
+    <string name="action_share">Megosztás</string>
+    <string name="action_copy">Másolás</string>
+    <string name="action_call">Hívás</string>
+    <string name="action_message">Üzenet</string>
+
+    <!-- Common Labels -->
+    <string name="label_loading">Betöltés…</string>
+    <string name="label_error">Hiba</string>
+    <string name="label_no_results">Nincs találat</string>
+    <string name="label_required">Kötelező</string>
+    <string name="label_optional">Opcionális</string>
+    <string name="label_or">vagy</string>
+    <string name="label_from">Ettől</string>
+    <string name="label_to">Eddig</string>
+    <string name="label_all">Összes</string>
+    <string name="label_none">Nincs</string>
+    <string name="label_other">Egyéb</string>
+    <string name="label_currency_symbol">Ft</string>
+
+    <!-- Validation Errors -->
+    <string name="validation_email_required">Az email kötelező</string>
+    <string name="validation_email_invalid">Érvénytelen email cím</string>
+    <string name="validation_password_required">A jelszó kötelező</string>
+    <string name="validation_password_short">A jelszónak legalább 6 karakter hosszúnak kell lennie</string>
+    <string name="validation_passwords_mismatch">A jelszavak nem egyeznek</string>
+    <string name="validation_name_required">A név kötelező</string>
+    <string name="validation_phone_required">A telefonszám kötelező</string>
+    <string name="validation_phone_invalid">Érvénytelen telefonszám</string>
+    <string name="validation_field_required">Ez a mező kötelező</string>
+    <string name="validation_date_required">A dátum kötelező</string>
+    <string name="validation_time_required">Az idő kötelező</string>
+    <string name="validation_service_required">A szolgáltatás kötelező</string>
+    <string name="validation_client_required">Az ügyfél kötelező</string>
+
+    <!-- Error Messages -->
+    <string name="error_network">Hálózati hiba. Ellenőrizze a kapcsolatot.</string>
+    <string name="error_generic">Valami hiba történt. Próbálja újra.</string>
+    <string name="error_session_expired">A munkamenet lejárt. Jelentkezzen be újra.</string>
+    <string name="error_unauthorized">Nincs jogosultsága ehhez a művelethez.</string>
+    <string name="error_not_found">A kért elem nem található.</string>
+    <string name="error_server">Szerverhiba. Próbálja később.</string>
+    <string name="error_timeout">A kérés időtúllépés miatt meghiúsult. Próbálja újra.</string>
+    <string name="error_invalid_credentials">Érvénytelen email vagy jelszó.</string>
+    <string name="error_account_exists">Ezzel az email címmel már létezik fiók.</string>
+    <string name="error_too_many_requests">Túl sok kérés. Várjon egy kicsit.</string>
+
+    <!-- Time -->
+    <string name="time_h">ó</string>
+    <string name="time_min">perc</string>
+    <string name="time_today">Ma</string>
+    <string name="time_yesterday">Tegnap</string>
+    <string name="time_tomorrow">Holnap</string>
+    <string name="time_just_now">Éppen most</string>
+    <string name="time_minutes_ago">%1$d perce</string>
+    <string name="time_hours_ago">%1$d órája</string>
+    <string name="time_days_ago">%1$d napja</string>
+
+    <!-- Empty States -->
+    <string name="empty_appointments">Nincsenek ütemezett időpontok</string>
+    <string name="empty_clients">Az ügyféllista üres</string>
+    <string name="empty_services">Nincsenek beállított szolgáltatások</string>
+    <string name="empty_requests">Nincsenek foglalási kérések</string>
+    <string name="empty_history">Nincs elérhető előzmény</string>
+    <string name="empty_notes">Nincsenek hozzáadott jegyzetek</string>
+
+    <!-- Notifications -->
+    <string name="notification_new_booking">Új foglalási kérés</string>
+    <string name="notification_appointment_reminder">Időpont emlékeztető</string>
+    <string name="notification_appointment_cancelled">Időpont lemondva</string>
+    <string name="notification_channel_bookings">Foglalások</string>
+    <string name="notification_channel_reminders">Emlékeztetők</string>
+    <string name="notification_channel_general">Általános</string>
+
+    <!-- Accessibility -->
+    <string name="a11y_navigate_back">Visszanavigálás</string>
+    <string name="a11y_open_menu">Menü megnyitása</string>
+    <string name="a11y_close_menu">Menü bezárása</string>
+    <string name="a11y_loading">Tartalom betöltése</string>
+    <string name="a11y_avatar">Felhasználói avatar</string>
+    <string name="a11y_logo">Brelio logó</string>
+</resources>

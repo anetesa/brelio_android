@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Brelio</string>
+    <string name="app_tagline">Просте управління салоном</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Головна</string>
+    <string name="nav_calendar">Календар</string>
+    <string name="nav_requests">Заявки</string>
+    <string name="nav_clients">Клієнти</string>
+    <string name="nav_settings">Налаштування</string>
+
+    <!-- Auth - Sign In -->
+    <string name="auth_sign_in">Увійти</string>
+    <string name="auth_sign_in_title">З поверненням</string>
+    <string name="auth_sign_in_subtitle">Увійдіть до свого акаунту</string>
+    <string name="auth_email">Email</string>
+    <string name="auth_email_hint">Введіть ваш email</string>
+    <string name="auth_password">Пароль</string>
+    <string name="auth_password_hint">Введіть ваш пароль</string>
+    <string name="auth_forgot_password">Забули пароль?</string>
+    <string name="auth_sign_in_button">Увійти</string>
+    <string name="auth_no_account">Немає акаунту?</string>
+    <string name="auth_sign_up_link">Зареєструватися</string>
+    <string name="auth_show_password">Показати пароль</string>
+    <string name="auth_hide_password">Сховати пароль</string>
+
+    <!-- Auth - Sign Up -->
+    <string name="auth_sign_up">Реєстрація</string>
+    <string name="auth_sign_up_title">Створити акаунт</string>
+    <string name="auth_sign_up_subtitle">Почніть керувати своїм салоном</string>
+    <string name="auth_name">Повне ім\'я</string>
+    <string name="auth_name_hint">Введіть ваше повне ім\'я</string>
+    <string name="auth_confirm_password">Підтвердіть пароль</string>
+    <string name="auth_confirm_password_hint">Введіть пароль ще раз</string>
+    <string name="auth_sign_up_button">Створити акаунт</string>
+    <string name="auth_have_account">Вже є акаунт?</string>
+    <string name="auth_sign_in_link">Увійти</string>
+    <string name="auth_terms_agree">Реєструючись, ви приймаєте</string>
+    <string name="auth_terms">Умови використання</string>
+    <string name="auth_privacy">Політику конфіденційності</string>
+    <string name="auth_and">та</string>
+
+    <!-- Auth - Reset Password -->
+    <string name="auth_reset_password">Скинути пароль</string>
+    <string name="auth_reset_password_title">Забули пароль?</string>
+    <string name="auth_reset_password_subtitle">Введіть email, і ми надішлемо посилання для скидання</string>
+    <string name="auth_reset_password_button">Надіслати посилання</string>
+    <string name="auth_reset_password_success">Посилання надіслано! Перевірте пошту.</string>
+    <string name="auth_back_to_sign_in">Повернутися до входу</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Управління записами</string>
+    <string name="onboarding_desc_1">Керуйте записами без зусиль. Приймайте бронювання, відстежуйте розклад і зменшуйте неявки завдяки автоматичним нагадуванням.</string>
+    <string name="onboarding_title_2">CRM клієнтів</string>
+    <string name="onboarding_desc_2">Будуйте міцні стосунки. Ведіть детальні профілі клієнтів, відстежуйте історію візитів і персоналізуйте кожен досвід.</string>
+    <string name="onboarding_title_3">Розумна аналітика</string>
+    <string name="onboarding_desc_3">Розвивайте бізнес за допомогою даних. Відстежуйте доходи, моніторте тренди та приймайте обґрунтовані рішення.</string>
+    <string name="onboarding_get_started">Почати</string>
+    <string name="onboarding_next">Далі</string>
+    <string name="onboarding_skip">Пропустити</string>
+
+    <!-- Home / Dashboard -->
+    <string name="home_title">Панель керування</string>
+    <string name="home_greeting">Привіт, %1$s!</string>
+    <string name="home_today_appointments">Записи на сьогодні</string>
+    <string name="home_no_appointments">Немає записів на сьогодні</string>
+    <string name="home_upcoming">Найближчі</string>
+    <string name="home_recent_activity">Остання активність</string>
+    <string name="home_view_all">Дивитися все</string>
+    <string name="home_quick_actions">Швидкі дії</string>
+    <string name="home_new_appointment">Новий запис</string>
+    <string name="home_new_client">Новий клієнт</string>
+    <string name="home_stats">Статистика</string>
+
+    <!-- Stats -->
+    <string name="stat_revenue">Дохід</string>
+    <string name="stat_clients">Клієнти</string>
+    <string name="stat_appointments">Записи</string>
+    <string name="stat_no_shows">Неявки</string>
+    <string name="stat_today">Сьогодні</string>
+    <string name="stat_this_week">Цей тиждень</string>
+    <string name="stat_this_month">Цей місяць</string>
+    <string name="stat_total">Усього</string>
+    <string name="stat_average_rating">Середній рейтинг</string>
+    <string name="stat_completion_rate">Відсоток завершення</string>
+
+    <!-- Calendar -->
+    <string name="calendar_title">Календар</string>
+    <string name="calendar_today">Сьогодні</string>
+    <string name="calendar_day_view">День</string>
+    <string name="calendar_week_view">Тиждень</string>
+    <string name="calendar_month_view">Місяць</string>
+    <string name="calendar_no_events">Немає подій на цей день</string>
+    <string name="calendar_add_event">Додати подію</string>
+    <string name="calendar_all_day">Весь день</string>
+
+    <!-- Day Names -->
+    <string name="day_monday">Понеділок</string>
+    <string name="day_tuesday">Вівторок</string>
+    <string name="day_wednesday">Середа</string>
+    <string name="day_thursday">Четвер</string>
+    <string name="day_friday">П\'ятниця</string>
+    <string name="day_saturday">Субота</string>
+    <string name="day_sunday">Неділя</string>
+
+    <!-- Day Names Short -->
+    <string name="day_mon">Пн</string>
+    <string name="day_tue">Вт</string>
+    <string name="day_wed">Ср</string>
+    <string name="day_thu">Чт</string>
+    <string name="day_fri">Пт</string>
+    <string name="day_sat">Сб</string>
+    <string name="day_sun">Нд</string>
+
+    <!-- Month Names -->
+    <string name="month_january">Січень</string>
+    <string name="month_february">Лютий</string>
+    <string name="month_march">Березень</string>
+    <string name="month_april">Квітень</string>
+    <string name="month_may">Травень</string>
+    <string name="month_june">Червень</string>
+    <string name="month_july">Липень</string>
+    <string name="month_august">Серпень</string>
+    <string name="month_september">Вересень</string>
+    <string name="month_october">Жовтень</string>
+    <string name="month_november">Листопад</string>
+    <string name="month_december">Грудень</string>
+
+    <!-- Requests -->
+    <string name="requests_title">Заявки</string>
+    <string name="requests_pending">Очікуючі заявки</string>
+    <string name="requests_no_pending">Немає очікуючих заявок</string>
+    <string name="requests_accept">Прийняти</string>
+    <string name="requests_decline">Відхилити</string>
+    <string name="requests_accepted">Прийнято</string>
+    <string name="requests_declined">Відхилено</string>
+
+    <!-- Clients -->
+    <string name="clients_title">Клієнти</string>
+    <string name="clients_search">Пошук клієнтів…</string>
+    <string name="clients_add">Додати клієнта</string>
+    <string name="clients_no_clients">Клієнтів поки немає</string>
+    <string name="clients_no_results">Клієнтів не знайдено</string>
+    <string name="clients_total">Усього клієнтів</string>
+    <string name="clients_sort_name">Сортування за ім\'ям</string>
+    <string name="clients_sort_recent">Сортування за датою</string>
+    <string name="clients_tab_info">Інформація</string>
+    <string name="clients_tab_history">Історія</string>
+    <string name="clients_tab_notes">Нотатки</string>
+
+    <!-- Client Fields -->
+    <string name="client_name">Ім\'я</string>
+    <string name="client_phone">Телефон</string>
+    <string name="client_email">Email</string>
+    <string name="client_notes">Нотатки</string>
+    <string name="client_birthday">Дата народження</string>
+    <string name="client_address">Адреса</string>
+    <string name="client_since">Клієнт з</string>
+    <string name="client_last_visit">Останній візит</string>
+    <string name="client_total_visits">Усього візитів</string>
+    <string name="client_total_spent">Усього витрачено</string>
+    <string name="client_favorite_service">Улюблена послуга</string>
+    <string name="client_no_history">Немає історії візитів</string>
+    <string name="client_delete_confirm">Ви впевнені, що хочете видалити цього клієнта?</string>
+
+    <!-- Appointments -->
+    <string name="appointment_title">Запис</string>
+    <string name="appointment_new">Новий запис</string>
+    <string name="appointment_edit">Редагувати запис</string>
+    <string name="appointment_details">Деталі запису</string>
+    <string name="appointment_service">Послуга</string>
+    <string name="appointment_date">Дата</string>
+    <string name="appointment_time">Час</string>
+    <string name="appointment_duration">Тривалість</string>
+    <string name="appointment_price">Ціна</string>
+    <string name="appointment_notes">Нотатки</string>
+    <string name="appointment_status">Статус</string>
+    <string name="appointment_select_client">Оберіть клієнта</string>
+    <string name="appointment_select_service">Оберіть послугу</string>
+    <string name="appointment_select_date">Оберіть дату</string>
+    <string name="appointment_select_time">Оберіть час</string>
+    <string name="appointment_cancel_confirm">Ви впевнені, що хочете скасувати цей запис?</string>
+    <string name="appointment_delete_confirm">Ви впевнені, що хочете видалити цей запис?</string>
+
+    <!-- Appointment Statuses -->
+    <string name="status_confirmed">Підтверджено</string>
+    <string name="status_pending">Очікує</string>
+    <string name="status_cancelled">Скасовано</string>
+    <string name="status_no_show">Неявка</string>
+    <string name="status_completed">Завершено</string>
+
+    <!-- Services -->
+    <string name="services_title">Послуги</string>
+    <string name="services_add">Додати послугу</string>
+    <string name="services_edit">Редагувати послугу</string>
+    <string name="service_name">Назва послуги</string>
+    <string name="service_duration">Тривалість</string>
+    <string name="service_price">Ціна</string>
+    <string name="service_category">Категорія</string>
+    <string name="service_description">Опис</string>
+    <string name="services_no_services">Послуги ще не додано</string>
+
+    <!-- Payment -->
+    <string name="payment_cash">Готівка</string>
+    <string name="payment_card">Картка</string>
+    <string name="payment_paid">Оплачено</string>
+    <string name="payment_unpaid">Не оплачено</string>
+    <string name="payment_method">Спосіб оплати</string>
+    <string name="payment_amount">Сума</string>
+    <string name="payment_status">Статус оплати</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Налаштування</string>
+    <string name="settings_salon_profile">Профіль салону</string>
+    <string name="settings_salon_name">Назва салону</string>
+    <string name="settings_salon_address">Адреса</string>
+    <string name="settings_salon_phone">Телефон</string>
+    <string name="settings_working_hours">Робочі години</string>
+    <string name="settings_theme">Тема</string>
+    <string name="settings_language">Мова</string>
+    <string name="settings_notifications">Сповіщення</string>
+    <string name="settings_notifications_push">Push-сповіщення</string>
+    <string name="settings_notifications_email">Email-сповіщення</string>
+    <string name="settings_notifications_sms">SMS-сповіщення</string>
+    <string name="settings_notifications_reminders">Нагадування про записи</string>
+    <string name="settings_account">Акаунт</string>
+    <string name="settings_sign_out">Вийти</string>
+    <string name="settings_sign_out_confirm">Ви впевнені, що хочете вийти?</string>
+    <string name="settings_delete_account">Видалити акаунт</string>
+    <string name="settings_delete_account_confirm">Ця дія незворотна. Усі ваші дані будуть видалені.</string>
+    <string name="settings_about">Про додаток</string>
+    <string name="settings_version">Версія</string>
+    <string name="settings_rate_app">Оцінити додаток</string>
+    <string name="settings_feedback">Надіслати відгук</string>
+    <string name="settings_privacy_policy">Політика конфіденційності</string>
+    <string name="settings_terms_of_service">Умови використання</string>
+
+    <!-- Theme Names -->
+    <string name="theme_classic">Класичний (Жіночий)</string>
+    <string name="theme_modern">Сучасний (Чоловічий)</string>
+    <string name="theme_system">Системна тема</string>
+
+    <!-- Language Names -->
+    <string name="lang_english">English</string>
+    <string name="lang_polish">Polski</string>
+    <string name="lang_russian">Русский</string>
+    <string name="lang_ukrainian">Українська</string>
+    <string name="lang_czech">Čeština</string>
+    <string name="lang_slovak">Slovenčina</string>
+    <string name="lang_hungarian">Magyar</string>
+    <string name="lang_german">Deutsch</string>
+
+    <!-- Common Actions -->
+    <string name="action_save">Зберегти</string>
+    <string name="action_cancel">Скасувати</string>
+    <string name="action_delete">Видалити</string>
+    <string name="action_edit">Редагувати</string>
+    <string name="action_back">Назад</string>
+    <string name="action_done">Готово</string>
+    <string name="action_search">Пошук</string>
+    <string name="action_confirm">Підтвердити</string>
+    <string name="action_retry">Повторити</string>
+    <string name="action_ok">ОК</string>
+    <string name="action_yes">Так</string>
+    <string name="action_no">Ні</string>
+    <string name="action_close">Закрити</string>
+    <string name="action_add">Додати</string>
+    <string name="action_remove">Видалити</string>
+    <string name="action_select">Обрати</string>
+    <string name="action_continue">Продовжити</string>
+    <string name="action_apply">Застосувати</string>
+    <string name="action_clear">Очистити</string>
+    <string name="action_refresh">Оновити</string>
+    <string name="action_share">Поділитися</string>
+    <string name="action_copy">Копіювати</string>
+    <string name="action_call">Зателефонувати</string>
+    <string name="action_message">Повідомлення</string>
+
+    <!-- Common Labels -->
+    <string name="label_loading">Завантаження…</string>
+    <string name="label_error">Помилка</string>
+    <string name="label_no_results">Немає результатів</string>
+    <string name="label_required">Обов\'язково</string>
+    <string name="label_optional">Необов\'язково</string>
+    <string name="label_or">або</string>
+    <string name="label_from">Від</string>
+    <string name="label_to">До</string>
+    <string name="label_all">Усі</string>
+    <string name="label_none">Немає</string>
+    <string name="label_other">Інше</string>
+    <string name="label_currency_symbol">₴</string>
+
+    <!-- Validation Errors -->
+    <string name="validation_email_required">Введіть email</string>
+    <string name="validation_email_invalid">Некоректний email</string>
+    <string name="validation_password_required">Введіть пароль</string>
+    <string name="validation_password_short">Пароль має містити щонайменше 6 символів</string>
+    <string name="validation_passwords_mismatch">Паролі не збігаються</string>
+    <string name="validation_name_required">Введіть ім\'я</string>
+    <string name="validation_phone_required">Введіть номер телефону</string>
+    <string name="validation_phone_invalid">Некоректний номер телефону</string>
+    <string name="validation_field_required">Це поле обов\'язкове</string>
+    <string name="validation_date_required">Оберіть дату</string>
+    <string name="validation_time_required">Оберіть час</string>
+    <string name="validation_service_required">Оберіть послугу</string>
+    <string name="validation_client_required">Оберіть клієнта</string>
+
+    <!-- Error Messages -->
+    <string name="error_network">Помилка мережі. Перевірте підключення.</string>
+    <string name="error_generic">Щось пішло не так. Спробуйте знову.</string>
+    <string name="error_session_expired">Сесія закінчилася. Увійдіть знову.</string>
+    <string name="error_unauthorized">У вас немає прав для виконання цієї дії.</string>
+    <string name="error_not_found">Запитуваний елемент не знайдено.</string>
+    <string name="error_server">Помилка сервера. Спробуйте пізніше.</string>
+    <string name="error_timeout">Час очікування вичерпано. Спробуйте знову.</string>
+    <string name="error_invalid_credentials">Невірний email або пароль.</string>
+    <string name="error_account_exists">Акаунт з таким email вже існує.</string>
+    <string name="error_too_many_requests">Забагато запитів. Зачекайте трохи.</string>
+
+    <!-- Time -->
+    <string name="time_h">год</string>
+    <string name="time_min">хв</string>
+    <string name="time_today">Сьогодні</string>
+    <string name="time_yesterday">Вчора</string>
+    <string name="time_tomorrow">Завтра</string>
+    <string name="time_just_now">Щойно</string>
+    <string name="time_minutes_ago">%1$d хв тому</string>
+    <string name="time_hours_ago">%1$d год тому</string>
+    <string name="time_days_ago">%1$d дн. тому</string>
+
+    <!-- Empty States -->
+    <string name="empty_appointments">Немає запланованих записів</string>
+    <string name="empty_clients">Список клієнтів порожній</string>
+    <string name="empty_services">Послуги не налаштовано</string>
+    <string name="empty_requests">Немає заявок на запис</string>
+    <string name="empty_history">Історія недоступна</string>
+    <string name="empty_notes">Нотатки не додано</string>
+
+    <!-- Notifications -->
+    <string name="notification_new_booking">Нова заявка на запис</string>
+    <string name="notification_appointment_reminder">Нагадування про запис</string>
+    <string name="notification_appointment_cancelled">Запис скасовано</string>
+    <string name="notification_channel_bookings">Бронювання</string>
+    <string name="notification_channel_reminders">Нагадування</string>
+    <string name="notification_channel_general">Загальні</string>
+
+    <!-- Accessibility -->
+    <string name="a11y_navigate_back">Повернутися назад</string>
+    <string name="a11y_open_menu">Відкрити меню</string>
+    <string name="a11y_close_menu">Закрити меню</string>
+    <string name="a11y_loading">Завантаження контенту</string>
+    <string name="a11y_avatar">Аватар користувача</string>
+    <string name="a11y_logo">Логотип Brelio</string>
+</resources>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Brelio</string>
+    <string name="app_tagline">Proste zarządzanie salonem</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Główna</string>
+    <string name="nav_calendar">Kalendarz</string>
+    <string name="nav_requests">Prośby</string>
+    <string name="nav_clients">Klienci</string>
+    <string name="nav_settings">Ustawienia</string>
+
+    <!-- Auth - Sign In -->
+    <string name="auth_sign_in">Zaloguj się</string>
+    <string name="auth_sign_in_title">Witaj ponownie</string>
+    <string name="auth_sign_in_subtitle">Zaloguj się na swoje konto</string>
+    <string name="auth_email">Email</string>
+    <string name="auth_email_hint">Wpisz swój email</string>
+    <string name="auth_password">Hasło</string>
+    <string name="auth_password_hint">Wpisz swoje hasło</string>
+    <string name="auth_forgot_password">Zapomniałeś hasła?</string>
+    <string name="auth_sign_in_button">Zaloguj się</string>
+    <string name="auth_no_account">Nie masz konta?</string>
+    <string name="auth_sign_up_link">Zarejestruj się</string>
+    <string name="auth_show_password">Pokaż hasło</string>
+    <string name="auth_hide_password">Ukryj hasło</string>
+
+    <!-- Auth - Sign Up -->
+    <string name="auth_sign_up">Rejestracja</string>
+    <string name="auth_sign_up_title">Utwórz konto</string>
+    <string name="auth_sign_up_subtitle">Zacznij zarządzać swoim salonem</string>
+    <string name="auth_name">Imię i nazwisko</string>
+    <string name="auth_name_hint">Wpisz swoje imię i nazwisko</string>
+    <string name="auth_confirm_password">Potwierdź hasło</string>
+    <string name="auth_confirm_password_hint">Wpisz hasło ponownie</string>
+    <string name="auth_sign_up_button">Utwórz konto</string>
+    <string name="auth_have_account">Masz już konto?</string>
+    <string name="auth_sign_in_link">Zaloguj się</string>
+    <string name="auth_terms_agree">Rejestrując się, akceptujesz</string>
+    <string name="auth_terms">Regulamin</string>
+    <string name="auth_privacy">Politykę prywatności</string>
+    <string name="auth_and">i</string>
+
+    <!-- Auth - Reset Password -->
+    <string name="auth_reset_password">Resetuj hasło</string>
+    <string name="auth_reset_password_title">Zapomniałeś hasła?</string>
+    <string name="auth_reset_password_subtitle">Wpisz swój email, a wyślemy link do resetowania</string>
+    <string name="auth_reset_password_button">Wyślij link resetujący</string>
+    <string name="auth_reset_password_success">Link do resetowania wysłany! Sprawdź email.</string>
+    <string name="auth_back_to_sign_in">Wróć do logowania</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Zarządzanie rezerwacjami</string>
+    <string name="onboarding_desc_1">Zarządzaj wizytami bez wysiłku. Przyjmuj rezerwacje, śledź harmonogram i ograniczaj nieobecności dzięki automatycznym przypomnieniom.</string>
+    <string name="onboarding_title_2">CRM klientów</string>
+    <string name="onboarding_desc_2">Buduj trwałe relacje. Prowadź szczegółowe profile klientów, śledź historię wizyt i personalizuj każde doświadczenie.</string>
+    <string name="onboarding_title_3">Inteligentna analityka</string>
+    <string name="onboarding_desc_3">Rozwijaj swój biznes dzięki danym. Śledź przychody, monitoruj trendy i podejmuj świadome decyzje dzięki zaawansowanym statystykom.</string>
+    <string name="onboarding_get_started">Rozpocznij</string>
+    <string name="onboarding_next">Dalej</string>
+    <string name="onboarding_skip">Pomiń</string>
+
+    <!-- Home / Dashboard -->
+    <string name="home_title">Panel główny</string>
+    <string name="home_greeting">Cześć, %1$s!</string>
+    <string name="home_today_appointments">Dzisiejsze wizyty</string>
+    <string name="home_no_appointments">Brak wizyt na dziś</string>
+    <string name="home_upcoming">Nadchodzące</string>
+    <string name="home_recent_activity">Ostatnia aktywność</string>
+    <string name="home_view_all">Zobacz wszystko</string>
+    <string name="home_quick_actions">Szybkie akcje</string>
+    <string name="home_new_appointment">Nowa wizyta</string>
+    <string name="home_new_client">Nowy klient</string>
+    <string name="home_stats">Statystyki</string>
+
+    <!-- Stats -->
+    <string name="stat_revenue">Przychód</string>
+    <string name="stat_clients">Klienci</string>
+    <string name="stat_appointments">Wizyty</string>
+    <string name="stat_no_shows">Nieobecności</string>
+    <string name="stat_today">Dziś</string>
+    <string name="stat_this_week">Ten tydzień</string>
+    <string name="stat_this_month">Ten miesiąc</string>
+    <string name="stat_total">Łącznie</string>
+    <string name="stat_average_rating">Średnia ocena</string>
+    <string name="stat_completion_rate">Wskaźnik realizacji</string>
+
+    <!-- Calendar -->
+    <string name="calendar_title">Kalendarz</string>
+    <string name="calendar_today">Dziś</string>
+    <string name="calendar_day_view">Dzień</string>
+    <string name="calendar_week_view">Tydzień</string>
+    <string name="calendar_month_view">Miesiąc</string>
+    <string name="calendar_no_events">Brak wydarzeń na ten dzień</string>
+    <string name="calendar_add_event">Dodaj wydarzenie</string>
+    <string name="calendar_all_day">Cały dzień</string>
+
+    <!-- Day Names -->
+    <string name="day_monday">Poniedziałek</string>
+    <string name="day_tuesday">Wtorek</string>
+    <string name="day_wednesday">Środa</string>
+    <string name="day_thursday">Czwartek</string>
+    <string name="day_friday">Piątek</string>
+    <string name="day_saturday">Sobota</string>
+    <string name="day_sunday">Niedziela</string>
+
+    <!-- Day Names Short -->
+    <string name="day_mon">Pon</string>
+    <string name="day_tue">Wt</string>
+    <string name="day_wed">Śr</string>
+    <string name="day_thu">Czw</string>
+    <string name="day_fri">Pt</string>
+    <string name="day_sat">Sob</string>
+    <string name="day_sun">Ndz</string>
+
+    <!-- Month Names -->
+    <string name="month_january">Styczeń</string>
+    <string name="month_february">Luty</string>
+    <string name="month_march">Marzec</string>
+    <string name="month_april">Kwiecień</string>
+    <string name="month_may">Maj</string>
+    <string name="month_june">Czerwiec</string>
+    <string name="month_july">Lipiec</string>
+    <string name="month_august">Sierpień</string>
+    <string name="month_september">Wrzesień</string>
+    <string name="month_october">Październik</string>
+    <string name="month_november">Listopad</string>
+    <string name="month_december">Grudzień</string>
+
+    <!-- Requests -->
+    <string name="requests_title">Prośby</string>
+    <string name="requests_pending">Oczekujące prośby</string>
+    <string name="requests_no_pending">Brak oczekujących próśb</string>
+    <string name="requests_accept">Akceptuj</string>
+    <string name="requests_decline">Odrzuć</string>
+    <string name="requests_accepted">Zaakceptowano</string>
+    <string name="requests_declined">Odrzucono</string>
+
+    <!-- Clients -->
+    <string name="clients_title">Klienci</string>
+    <string name="clients_search">Szukaj klientów…</string>
+    <string name="clients_add">Dodaj klienta</string>
+    <string name="clients_no_clients">Brak klientów</string>
+    <string name="clients_no_results">Nie znaleziono klientów</string>
+    <string name="clients_total">Łączna liczba klientów</string>
+    <string name="clients_sort_name">Sortuj wg nazwy</string>
+    <string name="clients_sort_recent">Sortuj wg ostatniej wizyty</string>
+    <string name="clients_tab_info">Informacje</string>
+    <string name="clients_tab_history">Historia</string>
+    <string name="clients_tab_notes">Notatki</string>
+
+    <!-- Client Fields -->
+    <string name="client_name">Imię i nazwisko</string>
+    <string name="client_phone">Telefon</string>
+    <string name="client_email">Email</string>
+    <string name="client_notes">Notatki</string>
+    <string name="client_birthday">Data urodzenia</string>
+    <string name="client_address">Adres</string>
+    <string name="client_since">Klient od</string>
+    <string name="client_last_visit">Ostatnia wizyta</string>
+    <string name="client_total_visits">Łączna liczba wizyt</string>
+    <string name="client_total_spent">Łączne wydatki</string>
+    <string name="client_favorite_service">Ulubiona usługa</string>
+    <string name="client_no_history">Brak historii wizyt</string>
+    <string name="client_delete_confirm">Czy na pewno chcesz usunąć tego klienta?</string>
+
+    <!-- Appointments -->
+    <string name="appointment_title">Wizyta</string>
+    <string name="appointment_new">Nowa wizyta</string>
+    <string name="appointment_edit">Edytuj wizytę</string>
+    <string name="appointment_details">Szczegóły wizyty</string>
+    <string name="appointment_service">Usługa</string>
+    <string name="appointment_date">Data</string>
+    <string name="appointment_time">Godzina</string>
+    <string name="appointment_duration">Czas trwania</string>
+    <string name="appointment_price">Cena</string>
+    <string name="appointment_notes">Notatki</string>
+    <string name="appointment_status">Status</string>
+    <string name="appointment_select_client">Wybierz klienta</string>
+    <string name="appointment_select_service">Wybierz usługę</string>
+    <string name="appointment_select_date">Wybierz datę</string>
+    <string name="appointment_select_time">Wybierz godzinę</string>
+    <string name="appointment_cancel_confirm">Czy na pewno chcesz anulować tę wizytę?</string>
+    <string name="appointment_delete_confirm">Czy na pewno chcesz usunąć tę wizytę?</string>
+
+    <!-- Appointment Statuses -->
+    <string name="status_confirmed">Potwierdzona</string>
+    <string name="status_pending">Oczekująca</string>
+    <string name="status_cancelled">Anulowana</string>
+    <string name="status_no_show">Nieobecność</string>
+    <string name="status_completed">Zakończona</string>
+
+    <!-- Services -->
+    <string name="services_title">Usługi</string>
+    <string name="services_add">Dodaj usługę</string>
+    <string name="services_edit">Edytuj usługę</string>
+    <string name="service_name">Nazwa usługi</string>
+    <string name="service_duration">Czas trwania</string>
+    <string name="service_price">Cena</string>
+    <string name="service_category">Kategoria</string>
+    <string name="service_description">Opis</string>
+    <string name="services_no_services">Nie dodano jeszcze usług</string>
+
+    <!-- Payment -->
+    <string name="payment_cash">Gotówka</string>
+    <string name="payment_card">Karta</string>
+    <string name="payment_paid">Opłacono</string>
+    <string name="payment_unpaid">Nieopłacono</string>
+    <string name="payment_method">Metoda płatności</string>
+    <string name="payment_amount">Kwota</string>
+    <string name="payment_status">Status płatności</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Ustawienia</string>
+    <string name="settings_salon_profile">Profil salonu</string>
+    <string name="settings_salon_name">Nazwa salonu</string>
+    <string name="settings_salon_address">Adres</string>
+    <string name="settings_salon_phone">Telefon</string>
+    <string name="settings_working_hours">Godziny pracy</string>
+    <string name="settings_theme">Motyw</string>
+    <string name="settings_language">Język</string>
+    <string name="settings_notifications">Powiadomienia</string>
+    <string name="settings_notifications_push">Powiadomienia push</string>
+    <string name="settings_notifications_email">Powiadomienia email</string>
+    <string name="settings_notifications_sms">Powiadomienia SMS</string>
+    <string name="settings_notifications_reminders">Przypomnienia o wizytach</string>
+    <string name="settings_account">Konto</string>
+    <string name="settings_sign_out">Wyloguj się</string>
+    <string name="settings_sign_out_confirm">Czy na pewno chcesz się wylogować?</string>
+    <string name="settings_delete_account">Usuń konto</string>
+    <string name="settings_delete_account_confirm">Ta operacja jest nieodwracalna. Wszystkie Twoje dane zostaną usunięte.</string>
+    <string name="settings_about">O aplikacji</string>
+    <string name="settings_version">Wersja</string>
+    <string name="settings_rate_app">Oceń aplikację</string>
+    <string name="settings_feedback">Wyślij opinię</string>
+    <string name="settings_privacy_policy">Polityka prywatności</string>
+    <string name="settings_terms_of_service">Regulamin</string>
+
+    <!-- Theme Names -->
+    <string name="theme_classic">Klasyczny (Kobiecy)</string>
+    <string name="theme_modern">Nowoczesny (Męski)</string>
+    <string name="theme_system">Domyślny systemowy</string>
+
+    <!-- Language Names -->
+    <string name="lang_english">English</string>
+    <string name="lang_polish">Polski</string>
+    <string name="lang_russian">Русский</string>
+    <string name="lang_ukrainian">Українська</string>
+    <string name="lang_czech">Čeština</string>
+    <string name="lang_slovak">Slovenčina</string>
+    <string name="lang_hungarian">Magyar</string>
+    <string name="lang_german">Deutsch</string>
+
+    <!-- Common Actions -->
+    <string name="action_save">Zapisz</string>
+    <string name="action_cancel">Anuluj</string>
+    <string name="action_delete">Usuń</string>
+    <string name="action_edit">Edytuj</string>
+    <string name="action_back">Wstecz</string>
+    <string name="action_done">Gotowe</string>
+    <string name="action_search">Szukaj</string>
+    <string name="action_confirm">Potwierdź</string>
+    <string name="action_retry">Ponów</string>
+    <string name="action_ok">OK</string>
+    <string name="action_yes">Tak</string>
+    <string name="action_no">Nie</string>
+    <string name="action_close">Zamknij</string>
+    <string name="action_add">Dodaj</string>
+    <string name="action_remove">Usuń</string>
+    <string name="action_select">Wybierz</string>
+    <string name="action_continue">Kontynuuj</string>
+    <string name="action_apply">Zastosuj</string>
+    <string name="action_clear">Wyczyść</string>
+    <string name="action_refresh">Odśwież</string>
+    <string name="action_share">Udostępnij</string>
+    <string name="action_copy">Kopiuj</string>
+    <string name="action_call">Zadzwoń</string>
+    <string name="action_message">Wiadomość</string>
+
+    <!-- Common Labels -->
+    <string name="label_loading">Ładowanie…</string>
+    <string name="label_error">Błąd</string>
+    <string name="label_no_results">Brak wyników</string>
+    <string name="label_required">Wymagane</string>
+    <string name="label_optional">Opcjonalne</string>
+    <string name="label_or">lub</string>
+    <string name="label_from">Od</string>
+    <string name="label_to">Do</string>
+    <string name="label_all">Wszystko</string>
+    <string name="label_none">Brak</string>
+    <string name="label_other">Inne</string>
+    <string name="label_currency_symbol">zł</string>
+
+    <!-- Validation Errors -->
+    <string name="validation_email_required">Email jest wymagany</string>
+    <string name="validation_email_invalid">Nieprawidłowy adres email</string>
+    <string name="validation_password_required">Hasło jest wymagane</string>
+    <string name="validation_password_short">Hasło musi mieć co najmniej 6 znaków</string>
+    <string name="validation_passwords_mismatch">Hasła nie są zgodne</string>
+    <string name="validation_name_required">Imię jest wymagane</string>
+    <string name="validation_phone_required">Numer telefonu jest wymagany</string>
+    <string name="validation_phone_invalid">Nieprawidłowy numer telefonu</string>
+    <string name="validation_field_required">To pole jest wymagane</string>
+    <string name="validation_date_required">Data jest wymagana</string>
+    <string name="validation_time_required">Godzina jest wymagana</string>
+    <string name="validation_service_required">Usługa jest wymagana</string>
+    <string name="validation_client_required">Klient jest wymagany</string>
+
+    <!-- Error Messages -->
+    <string name="error_network">Błąd sieci. Sprawdź połączenie internetowe.</string>
+    <string name="error_generic">Coś poszło nie tak. Spróbuj ponownie.</string>
+    <string name="error_session_expired">Sesja wygasła. Zaloguj się ponownie.</string>
+    <string name="error_unauthorized">Nie masz uprawnień do wykonania tej operacji.</string>
+    <string name="error_not_found">Nie znaleziono żądanego elementu.</string>
+    <string name="error_server">Błąd serwera. Spróbuj ponownie później.</string>
+    <string name="error_timeout">Upłynął limit czasu żądania. Spróbuj ponownie.</string>
+    <string name="error_invalid_credentials">Nieprawidłowy email lub hasło.</string>
+    <string name="error_account_exists">Konto z tym adresem email już istnieje.</string>
+    <string name="error_too_many_requests">Zbyt wiele żądań. Poczekaj chwilę.</string>
+
+    <!-- Time -->
+    <string name="time_h">godz.</string>
+    <string name="time_min">min</string>
+    <string name="time_today">Dziś</string>
+    <string name="time_yesterday">Wczoraj</string>
+    <string name="time_tomorrow">Jutro</string>
+    <string name="time_just_now">Właśnie teraz</string>
+    <string name="time_minutes_ago">%1$d min temu</string>
+    <string name="time_hours_ago">%1$d godz. temu</string>
+    <string name="time_days_ago">%1$d dni temu</string>
+
+    <!-- Empty States -->
+    <string name="empty_appointments">Brak zaplanowanych wizyt</string>
+    <string name="empty_clients">Lista klientów jest pusta</string>
+    <string name="empty_services">Brak skonfigurowanych usług</string>
+    <string name="empty_requests">Brak próśb o rezerwację</string>
+    <string name="empty_history">Brak dostępnej historii</string>
+    <string name="empty_notes">Brak dodanych notatek</string>
+
+    <!-- Notifications -->
+    <string name="notification_new_booking">Nowa prośba o rezerwację</string>
+    <string name="notification_appointment_reminder">Przypomnienie o wizycie</string>
+    <string name="notification_appointment_cancelled">Wizyta anulowana</string>
+    <string name="notification_channel_bookings">Rezerwacje</string>
+    <string name="notification_channel_reminders">Przypomnienia</string>
+    <string name="notification_channel_general">Ogólne</string>
+
+    <!-- Accessibility -->
+    <string name="a11y_navigate_back">Wróć</string>
+    <string name="a11y_open_menu">Otwórz menu</string>
+    <string name="a11y_close_menu">Zamknij menu</string>
+    <string name="a11y_loading">Trwa ładowanie</string>
+    <string name="a11y_avatar">Awatar użytkownika</string>
+    <string name="a11y_logo">Logo Brelio</string>
+</resources>

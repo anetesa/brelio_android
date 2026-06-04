@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Brelio</string>
+    <string name="app_tagline">Jednoduchá správa salonu</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Domů</string>
+    <string name="nav_calendar">Kalendář</string>
+    <string name="nav_requests">Požadavky</string>
+    <string name="nav_clients">Klienti</string>
+    <string name="nav_settings">Nastavení</string>
+
+    <!-- Auth - Sign In -->
+    <string name="auth_sign_in">Přihlásit se</string>
+    <string name="auth_sign_in_title">Vítejte zpět</string>
+    <string name="auth_sign_in_subtitle">Přihlaste se ke svému účtu</string>
+    <string name="auth_email">Email</string>
+    <string name="auth_email_hint">Zadejte svůj email</string>
+    <string name="auth_password">Heslo</string>
+    <string name="auth_password_hint">Zadejte své heslo</string>
+    <string name="auth_forgot_password">Zapomněli jste heslo?</string>
+    <string name="auth_sign_in_button">Přihlásit se</string>
+    <string name="auth_no_account">Nemáte účet?</string>
+    <string name="auth_sign_up_link">Zaregistrovat se</string>
+    <string name="auth_show_password">Zobrazit heslo</string>
+    <string name="auth_hide_password">Skrýt heslo</string>
+
+    <!-- Auth - Sign Up -->
+    <string name="auth_sign_up">Registrace</string>
+    <string name="auth_sign_up_title">Vytvořit účet</string>
+    <string name="auth_sign_up_subtitle">Začněte spravovat svůj salon</string>
+    <string name="auth_name">Celé jméno</string>
+    <string name="auth_name_hint">Zadejte své celé jméno</string>
+    <string name="auth_confirm_password">Potvrďte heslo</string>
+    <string name="auth_confirm_password_hint">Zadejte heslo znovu</string>
+    <string name="auth_sign_up_button">Vytvořit účet</string>
+    <string name="auth_have_account">Již máte účet?</string>
+    <string name="auth_sign_in_link">Přihlásit se</string>
+    <string name="auth_terms_agree">Registrací souhlasíte s</string>
+    <string name="auth_terms">Podmínkami služby</string>
+    <string name="auth_privacy">Zásadami ochrany osobních údajů</string>
+    <string name="auth_and">a</string>
+
+    <!-- Auth - Reset Password -->
+    <string name="auth_reset_password">Obnovit heslo</string>
+    <string name="auth_reset_password_title">Zapomněli jste heslo?</string>
+    <string name="auth_reset_password_subtitle">Zadejte svůj email a pošleme vám odkaz pro obnovení</string>
+    <string name="auth_reset_password_button">Odeslat odkaz</string>
+    <string name="auth_reset_password_success">Odkaz odeslán! Zkontrolujte email.</string>
+    <string name="auth_back_to_sign_in">Zpět na přihlášení</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Správa rezervací</string>
+    <string name="onboarding_desc_1">Spravujte schůzky bez námahy. Přijímejte rezervace, sledujte rozvrh a snižte neúčast díky automatickým připomínkám.</string>
+    <string name="onboarding_title_2">CRM klientů</string>
+    <string name="onboarding_desc_2">Budujte trvalé vztahy. Veďte podrobné profily klientů, sledujte historii návštěv a personalizujte každý zážitek.</string>
+    <string name="onboarding_title_3">Chytrá analytika</string>
+    <string name="onboarding_desc_3">Rozvíjejte svůj byznys s daty. Sledujte příjmy, monitorujte trendy a rozhodujte se na základě přesných informací.</string>
+    <string name="onboarding_get_started">Začít</string>
+    <string name="onboarding_next">Další</string>
+    <string name="onboarding_skip">Přeskočit</string>
+
+    <!-- Home / Dashboard -->
+    <string name="home_title">Přehled</string>
+    <string name="home_greeting">Ahoj, %1$s!</string>
+    <string name="home_today_appointments">Dnešní schůzky</string>
+    <string name="home_no_appointments">Žádné schůzky na dnes</string>
+    <string name="home_upcoming">Nadcházející</string>
+    <string name="home_recent_activity">Poslední aktivita</string>
+    <string name="home_view_all">Zobrazit vše</string>
+    <string name="home_quick_actions">Rychlé akce</string>
+    <string name="home_new_appointment">Nová schůzka</string>
+    <string name="home_new_client">Nový klient</string>
+    <string name="home_stats">Statistiky</string>
+
+    <!-- Stats -->
+    <string name="stat_revenue">Příjmy</string>
+    <string name="stat_clients">Klienti</string>
+    <string name="stat_appointments">Schůzky</string>
+    <string name="stat_no_shows">Neúčasti</string>
+    <string name="stat_today">Dnes</string>
+    <string name="stat_this_week">Tento týden</string>
+    <string name="stat_this_month">Tento měsíc</string>
+    <string name="stat_total">Celkem</string>
+    <string name="stat_average_rating">Průměrné hodnocení</string>
+    <string name="stat_completion_rate">Míra dokončení</string>
+
+    <!-- Calendar -->
+    <string name="calendar_title">Kalendář</string>
+    <string name="calendar_today">Dnes</string>
+    <string name="calendar_day_view">Den</string>
+    <string name="calendar_week_view">Týden</string>
+    <string name="calendar_month_view">Měsíc</string>
+    <string name="calendar_no_events">Žádné události na tento den</string>
+    <string name="calendar_add_event">Přidat událost</string>
+    <string name="calendar_all_day">Celý den</string>
+
+    <!-- Day Names -->
+    <string name="day_monday">Pondělí</string>
+    <string name="day_tuesday">Úterý</string>
+    <string name="day_wednesday">Středa</string>
+    <string name="day_thursday">Čtvrtek</string>
+    <string name="day_friday">Pátek</string>
+    <string name="day_saturday">Sobota</string>
+    <string name="day_sunday">Neděle</string>
+
+    <!-- Day Names Short -->
+    <string name="day_mon">Po</string>
+    <string name="day_tue">Út</string>
+    <string name="day_wed">St</string>
+    <string name="day_thu">Čt</string>
+    <string name="day_fri">Pá</string>
+    <string name="day_sat">So</string>
+    <string name="day_sun">Ne</string>
+
+    <!-- Month Names -->
+    <string name="month_january">Leden</string>
+    <string name="month_february">Únor</string>
+    <string name="month_march">Březen</string>
+    <string name="month_april">Duben</string>
+    <string name="month_may">Květen</string>
+    <string name="month_june">Červen</string>
+    <string name="month_july">Červenec</string>
+    <string name="month_august">Srpen</string>
+    <string name="month_september">Září</string>
+    <string name="month_october">Říjen</string>
+    <string name="month_november">Listopad</string>
+    <string name="month_december">Prosinec</string>
+
+    <!-- Requests -->
+    <string name="requests_title">Požadavky</string>
+    <string name="requests_pending">Čekající požadavky</string>
+    <string name="requests_no_pending">Žádné čekající požadavky</string>
+    <string name="requests_accept">Přijmout</string>
+    <string name="requests_decline">Odmítnout</string>
+    <string name="requests_accepted">Přijato</string>
+    <string name="requests_declined">Odmítnuto</string>
+
+    <!-- Clients -->
+    <string name="clients_title">Klienti</string>
+    <string name="clients_search">Hledat klienty…</string>
+    <string name="clients_add">Přidat klienta</string>
+    <string name="clients_no_clients">Zatím žádní klienti</string>
+    <string name="clients_no_results">Žádní klienti nenalezeni</string>
+    <string name="clients_total">Celkem klientů</string>
+    <string name="clients_sort_name">Řadit podle jména</string>
+    <string name="clients_sort_recent">Řadit podle poslední návštěvy</string>
+    <string name="clients_tab_info">Informace</string>
+    <string name="clients_tab_history">Historie</string>
+    <string name="clients_tab_notes">Poznámky</string>
+
+    <!-- Client Fields -->
+    <string name="client_name">Jméno</string>
+    <string name="client_phone">Telefon</string>
+    <string name="client_email">Email</string>
+    <string name="client_notes">Poznámky</string>
+    <string name="client_birthday">Datum narození</string>
+    <string name="client_address">Adresa</string>
+    <string name="client_since">Klient od</string>
+    <string name="client_last_visit">Poslední návštěva</string>
+    <string name="client_total_visits">Celkem návštěv</string>
+    <string name="client_total_spent">Celkem utraceno</string>
+    <string name="client_favorite_service">Oblíbená služba</string>
+    <string name="client_no_history">Žádná historie návštěv</string>
+    <string name="client_delete_confirm">Opravdu chcete smazat tohoto klienta?</string>
+
+    <!-- Appointments -->
+    <string name="appointment_title">Schůzka</string>
+    <string name="appointment_new">Nová schůzka</string>
+    <string name="appointment_edit">Upravit schůzku</string>
+    <string name="appointment_details">Detail schůzky</string>
+    <string name="appointment_service">Služba</string>
+    <string name="appointment_date">Datum</string>
+    <string name="appointment_time">Čas</string>
+    <string name="appointment_duration">Délka</string>
+    <string name="appointment_price">Cena</string>
+    <string name="appointment_notes">Poznámky</string>
+    <string name="appointment_status">Stav</string>
+    <string name="appointment_select_client">Vyberte klienta</string>
+    <string name="appointment_select_service">Vyberte službu</string>
+    <string name="appointment_select_date">Vyberte datum</string>
+    <string name="appointment_select_time">Vyberte čas</string>
+    <string name="appointment_cancel_confirm">Opravdu chcete zrušit tuto schůzku?</string>
+    <string name="appointment_delete_confirm">Opravdu chcete smazat tuto schůzku?</string>
+
+    <!-- Appointment Statuses -->
+    <string name="status_confirmed">Potvrzeno</string>
+    <string name="status_pending">Čeká</string>
+    <string name="status_cancelled">Zrušeno</string>
+    <string name="status_no_show">Neúčast</string>
+    <string name="status_completed">Dokončeno</string>
+
+    <!-- Services -->
+    <string name="services_title">Služby</string>
+    <string name="services_add">Přidat službu</string>
+    <string name="services_edit">Upravit službu</string>
+    <string name="service_name">Název služby</string>
+    <string name="service_duration">Délka</string>
+    <string name="service_price">Cena</string>
+    <string name="service_category">Kategorie</string>
+    <string name="service_description">Popis</string>
+    <string name="services_no_services">Zatím nebyly přidány žádné služby</string>
+
+    <!-- Payment -->
+    <string name="payment_cash">Hotovost</string>
+    <string name="payment_card">Karta</string>
+    <string name="payment_paid">Zaplaceno</string>
+    <string name="payment_unpaid">Nezaplaceno</string>
+    <string name="payment_method">Způsob platby</string>
+    <string name="payment_amount">Částka</string>
+    <string name="payment_status">Stav platby</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Nastavení</string>
+    <string name="settings_salon_profile">Profil salonu</string>
+    <string name="settings_salon_name">Název salonu</string>
+    <string name="settings_salon_address">Adresa</string>
+    <string name="settings_salon_phone">Telefon</string>
+    <string name="settings_working_hours">Pracovní doba</string>
+    <string name="settings_theme">Motiv</string>
+    <string name="settings_language">Jazyk</string>
+    <string name="settings_notifications">Oznámení</string>
+    <string name="settings_notifications_push">Push oznámení</string>
+    <string name="settings_notifications_email">Emailová oznámení</string>
+    <string name="settings_notifications_sms">SMS oznámení</string>
+    <string name="settings_notifications_reminders">Připomínky schůzek</string>
+    <string name="settings_account">Účet</string>
+    <string name="settings_sign_out">Odhlásit se</string>
+    <string name="settings_sign_out_confirm">Opravdu se chcete odhlásit?</string>
+    <string name="settings_delete_account">Smazat účet</string>
+    <string name="settings_delete_account_confirm">Tato akce je nevratná. Všechna vaše data budou smazána.</string>
+    <string name="settings_about">O aplikaci</string>
+    <string name="settings_version">Verze</string>
+    <string name="settings_rate_app">Ohodnotit aplikaci</string>
+    <string name="settings_feedback">Odeslat zpětnou vazbu</string>
+    <string name="settings_privacy_policy">Zásady ochrany osobních údajů</string>
+    <string name="settings_terms_of_service">Podmínky služby</string>
+
+    <!-- Theme Names -->
+    <string name="theme_classic">Klasický (Ženský)</string>
+    <string name="theme_modern">Moderní (Mužský)</string>
+    <string name="theme_system">Systémový výchozí</string>
+
+    <!-- Language Names -->
+    <string name="lang_english">English</string>
+    <string name="lang_polish">Polski</string>
+    <string name="lang_russian">Русский</string>
+    <string name="lang_ukrainian">Українська</string>
+    <string name="lang_czech">Čeština</string>
+    <string name="lang_slovak">Slovenčina</string>
+    <string name="lang_hungarian">Magyar</string>
+    <string name="lang_german">Deutsch</string>
+
+    <!-- Common Actions -->
+    <string name="action_save">Uložit</string>
+    <string name="action_cancel">Zrušit</string>
+    <string name="action_delete">Smazat</string>
+    <string name="action_edit">Upravit</string>
+    <string name="action_back">Zpět</string>
+    <string name="action_done">Hotovo</string>
+    <string name="action_search">Hledat</string>
+    <string name="action_confirm">Potvrdit</string>
+    <string name="action_retry">Opakovat</string>
+    <string name="action_ok">OK</string>
+    <string name="action_yes">Ano</string>
+    <string name="action_no">Ne</string>
+    <string name="action_close">Zavřít</string>
+    <string name="action_add">Přidat</string>
+    <string name="action_remove">Odebrat</string>
+    <string name="action_select">Vybrat</string>
+    <string name="action_continue">Pokračovat</string>
+    <string name="action_apply">Použít</string>
+    <string name="action_clear">Vymazat</string>
+    <string name="action_refresh">Obnovit</string>
+    <string name="action_share">Sdílet</string>
+    <string name="action_copy">Kopírovat</string>
+    <string name="action_call">Zavolat</string>
+    <string name="action_message">Zpráva</string>
+
+    <!-- Common Labels -->
+    <string name="label_loading">Načítání…</string>
+    <string name="label_error">Chyba</string>
+    <string name="label_no_results">Žádné výsledky</string>
+    <string name="label_required">Povinné</string>
+    <string name="label_optional">Volitelné</string>
+    <string name="label_or">nebo</string>
+    <string name="label_from">Od</string>
+    <string name="label_to">Do</string>
+    <string name="label_all">Vše</string>
+    <string name="label_none">Žádné</string>
+    <string name="label_other">Jiné</string>
+    <string name="label_currency_symbol">Kč</string>
+
+    <!-- Validation Errors -->
+    <string name="validation_email_required">Email je povinný</string>
+    <string name="validation_email_invalid">Neplatná emailová adresa</string>
+    <string name="validation_password_required">Heslo je povinné</string>
+    <string name="validation_password_short">Heslo musí mít alespoň 6 znaků</string>
+    <string name="validation_passwords_mismatch">Hesla se neshodují</string>
+    <string name="validation_name_required">Jméno je povinné</string>
+    <string name="validation_phone_required">Telefonní číslo je povinné</string>
+    <string name="validation_phone_invalid">Neplatné telefonní číslo</string>
+    <string name="validation_field_required">Toto pole je povinné</string>
+    <string name="validation_date_required">Datum je povinný</string>
+    <string name="validation_time_required">Čas je povinný</string>
+    <string name="validation_service_required">Služba je povinná</string>
+    <string name="validation_client_required">Klient je povinný</string>
+
+    <!-- Error Messages -->
+    <string name="error_network">Chyba sítě. Zkontrolujte připojení.</string>
+    <string name="error_generic">Něco se pokazilo. Zkuste to znovu.</string>
+    <string name="error_session_expired">Relace vypršela. Přihlaste se znovu.</string>
+    <string name="error_unauthorized">Nemáte oprávnění k provedení této akce.</string>
+    <string name="error_not_found">Požadovaná položka nebyla nalezena.</string>
+    <string name="error_server">Chyba serveru. Zkuste to později.</string>
+    <string name="error_timeout">Časový limit požadavku vypršel. Zkuste to znovu.</string>
+    <string name="error_invalid_credentials">Neplatný email nebo heslo.</string>
+    <string name="error_account_exists">Účet s tímto emailem již existuje.</string>
+    <string name="error_too_many_requests">Příliš mnoho požadavků. Chvíli počkejte.</string>
+
+    <!-- Time -->
+    <string name="time_h">h</string>
+    <string name="time_min">min</string>
+    <string name="time_today">Dnes</string>
+    <string name="time_yesterday">Včera</string>
+    <string name="time_tomorrow">Zítra</string>
+    <string name="time_just_now">Právě teď</string>
+    <string name="time_minutes_ago">před %1$d min</string>
+    <string name="time_hours_ago">před %1$d h</string>
+    <string name="time_days_ago">před %1$d dny</string>
+
+    <!-- Empty States -->
+    <string name="empty_appointments">Žádné naplánované schůzky</string>
+    <string name="empty_clients">Seznam klientů je prázdný</string>
+    <string name="empty_services">Žádné nakonfigurované služby</string>
+    <string name="empty_requests">Žádné požadavky na rezervaci</string>
+    <string name="empty_history">Žádná dostupná historie</string>
+    <string name="empty_notes">Žádné přidané poznámky</string>
+
+    <!-- Notifications -->
+    <string name="notification_new_booking">Nový požadavek na rezervaci</string>
+    <string name="notification_appointment_reminder">Připomínka schůzky</string>
+    <string name="notification_appointment_cancelled">Schůzka zrušena</string>
+    <string name="notification_channel_bookings">Rezervace</string>
+    <string name="notification_channel_reminders">Připomínky</string>
+    <string name="notification_channel_general">Obecné</string>
+
+    <!-- Accessibility -->
+    <string name="a11y_navigate_back">Přejít zpět</string>
+    <string name="a11y_open_menu">Otevřít menu</string>
+    <string name="a11y_close_menu">Zavřít menu</string>
+    <string name="a11y_loading">Načítání obsahu</string>
+    <string name="a11y_avatar">Avatar uživatele</string>
+    <string name="a11y_logo">Logo Brelio</string>
+</resources>

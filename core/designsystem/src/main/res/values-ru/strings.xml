@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Brelio</string>
+    <string name="app_tagline">Простое управление салоном</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Главная</string>
+    <string name="nav_calendar">Календарь</string>
+    <string name="nav_requests">Заявки</string>
+    <string name="nav_clients">Клиенты</string>
+    <string name="nav_settings">Настройки</string>
+
+    <!-- Auth - Sign In -->
+    <string name="auth_sign_in">Войти</string>
+    <string name="auth_sign_in_title">С возвращением</string>
+    <string name="auth_sign_in_subtitle">Войдите в свой аккаунт</string>
+    <string name="auth_email">Email</string>
+    <string name="auth_email_hint">Введите ваш email</string>
+    <string name="auth_password">Пароль</string>
+    <string name="auth_password_hint">Введите ваш пароль</string>
+    <string name="auth_forgot_password">Забыли пароль?</string>
+    <string name="auth_sign_in_button">Войти</string>
+    <string name="auth_no_account">Нет аккаунта?</string>
+    <string name="auth_sign_up_link">Зарегистрироваться</string>
+    <string name="auth_show_password">Показать пароль</string>
+    <string name="auth_hide_password">Скрыть пароль</string>
+
+    <!-- Auth - Sign Up -->
+    <string name="auth_sign_up">Регистрация</string>
+    <string name="auth_sign_up_title">Создать аккаунт</string>
+    <string name="auth_sign_up_subtitle">Начните управлять своим салоном</string>
+    <string name="auth_name">Полное имя</string>
+    <string name="auth_name_hint">Введите ваше полное имя</string>
+    <string name="auth_confirm_password">Подтвердите пароль</string>
+    <string name="auth_confirm_password_hint">Введите пароль повторно</string>
+    <string name="auth_sign_up_button">Создать аккаунт</string>
+    <string name="auth_have_account">Уже есть аккаунт?</string>
+    <string name="auth_sign_in_link">Войти</string>
+    <string name="auth_terms_agree">Регистрируясь, вы принимаете</string>
+    <string name="auth_terms">Условия использования</string>
+    <string name="auth_privacy">Политику конфиденциальности</string>
+    <string name="auth_and">и</string>
+
+    <!-- Auth - Reset Password -->
+    <string name="auth_reset_password">Сбросить пароль</string>
+    <string name="auth_reset_password_title">Забыли пароль?</string>
+    <string name="auth_reset_password_subtitle">Введите email, и мы отправим ссылку для сброса</string>
+    <string name="auth_reset_password_button">Отправить ссылку</string>
+    <string name="auth_reset_password_success">Ссылка отправлена! Проверьте почту.</string>
+    <string name="auth_back_to_sign_in">Вернуться к входу</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Управление записями</string>
+    <string name="onboarding_desc_1">Управляйте записями без усилий. Принимайте бронирования, отслеживайте расписание и сокращайте неявки с помощью автоматических напоминаний.</string>
+    <string name="onboarding_title_2">CRM клиентов</string>
+    <string name="onboarding_desc_2">Стройте прочные отношения. Ведите подробные профили клиентов, отслеживайте историю визитов и персонализируйте каждый опыт.</string>
+    <string name="onboarding_title_3">Умная аналитика</string>
+    <string name="onboarding_desc_3">Развивайте бизнес с помощью данных. Отслеживайте доходы, мониторьте тренды и принимайте обоснованные решения.</string>
+    <string name="onboarding_get_started">Начать</string>
+    <string name="onboarding_next">Далее</string>
+    <string name="onboarding_skip">Пропустить</string>
+
+    <!-- Home / Dashboard -->
+    <string name="home_title">Панель управления</string>
+    <string name="home_greeting">Привет, %1$s!</string>
+    <string name="home_today_appointments">Записи на сегодня</string>
+    <string name="home_no_appointments">Нет записей на сегодня</string>
+    <string name="home_upcoming">Предстоящие</string>
+    <string name="home_recent_activity">Последняя активность</string>
+    <string name="home_view_all">Смотреть все</string>
+    <string name="home_quick_actions">Быстрые действия</string>
+    <string name="home_new_appointment">Новая запись</string>
+    <string name="home_new_client">Новый клиент</string>
+    <string name="home_stats">Статистика</string>
+
+    <!-- Stats -->
+    <string name="stat_revenue">Доход</string>
+    <string name="stat_clients">Клиенты</string>
+    <string name="stat_appointments">Записи</string>
+    <string name="stat_no_shows">Неявки</string>
+    <string name="stat_today">Сегодня</string>
+    <string name="stat_this_week">Эта неделя</string>
+    <string name="stat_this_month">Этот месяц</string>
+    <string name="stat_total">Итого</string>
+    <string name="stat_average_rating">Средний рейтинг</string>
+    <string name="stat_completion_rate">Процент завершения</string>
+
+    <!-- Calendar -->
+    <string name="calendar_title">Календарь</string>
+    <string name="calendar_today">Сегодня</string>
+    <string name="calendar_day_view">День</string>
+    <string name="calendar_week_view">Неделя</string>
+    <string name="calendar_month_view">Месяц</string>
+    <string name="calendar_no_events">Нет событий на этот день</string>
+    <string name="calendar_add_event">Добавить событие</string>
+    <string name="calendar_all_day">Весь день</string>
+
+    <!-- Day Names -->
+    <string name="day_monday">Понедельник</string>
+    <string name="day_tuesday">Вторник</string>
+    <string name="day_wednesday">Среда</string>
+    <string name="day_thursday">Четверг</string>
+    <string name="day_friday">Пятница</string>
+    <string name="day_saturday">Суббота</string>
+    <string name="day_sunday">Воскресенье</string>
+
+    <!-- Day Names Short -->
+    <string name="day_mon">Пн</string>
+    <string name="day_tue">Вт</string>
+    <string name="day_wed">Ср</string>
+    <string name="day_thu">Чт</string>
+    <string name="day_fri">Пт</string>
+    <string name="day_sat">Сб</string>
+    <string name="day_sun">Вс</string>
+
+    <!-- Month Names -->
+    <string name="month_january">Январь</string>
+    <string name="month_february">Февраль</string>
+    <string name="month_march">Март</string>
+    <string name="month_april">Апрель</string>
+    <string name="month_may">Май</string>
+    <string name="month_june">Июнь</string>
+    <string name="month_july">Июль</string>
+    <string name="month_august">Август</string>
+    <string name="month_september">Сентябрь</string>
+    <string name="month_october">Октябрь</string>
+    <string name="month_november">Ноябрь</string>
+    <string name="month_december">Декабрь</string>
+
+    <!-- Requests -->
+    <string name="requests_title">Заявки</string>
+    <string name="requests_pending">Ожидающие заявки</string>
+    <string name="requests_no_pending">Нет ожидающих заявок</string>
+    <string name="requests_accept">Принять</string>
+    <string name="requests_decline">Отклонить</string>
+    <string name="requests_accepted">Принято</string>
+    <string name="requests_declined">Отклонено</string>
+
+    <!-- Clients -->
+    <string name="clients_title">Клиенты</string>
+    <string name="clients_search">Поиск клиентов…</string>
+    <string name="clients_add">Добавить клиента</string>
+    <string name="clients_no_clients">Клиентов пока нет</string>
+    <string name="clients_no_results">Клиенты не найдены</string>
+    <string name="clients_total">Всего клиентов</string>
+    <string name="clients_sort_name">Сортировка по имени</string>
+    <string name="clients_sort_recent">Сортировка по дате</string>
+    <string name="clients_tab_info">Информация</string>
+    <string name="clients_tab_history">История</string>
+    <string name="clients_tab_notes">Заметки</string>
+
+    <!-- Client Fields -->
+    <string name="client_name">Имя</string>
+    <string name="client_phone">Телефон</string>
+    <string name="client_email">Email</string>
+    <string name="client_notes">Заметки</string>
+    <string name="client_birthday">Дата рождения</string>
+    <string name="client_address">Адрес</string>
+    <string name="client_since">Клиент с</string>
+    <string name="client_last_visit">Последний визит</string>
+    <string name="client_total_visits">Всего визитов</string>
+    <string name="client_total_spent">Всего потрачено</string>
+    <string name="client_favorite_service">Любимая услуга</string>
+    <string name="client_no_history">Нет истории визитов</string>
+    <string name="client_delete_confirm">Вы уверены, что хотите удалить этого клиента?</string>
+
+    <!-- Appointments -->
+    <string name="appointment_title">Запись</string>
+    <string name="appointment_new">Новая запись</string>
+    <string name="appointment_edit">Редактировать запись</string>
+    <string name="appointment_details">Детали записи</string>
+    <string name="appointment_service">Услуга</string>
+    <string name="appointment_date">Дата</string>
+    <string name="appointment_time">Время</string>
+    <string name="appointment_duration">Длительность</string>
+    <string name="appointment_price">Цена</string>
+    <string name="appointment_notes">Заметки</string>
+    <string name="appointment_status">Статус</string>
+    <string name="appointment_select_client">Выберите клиента</string>
+    <string name="appointment_select_service">Выберите услугу</string>
+    <string name="appointment_select_date">Выберите дату</string>
+    <string name="appointment_select_time">Выберите время</string>
+    <string name="appointment_cancel_confirm">Вы уверены, что хотите отменить эту запись?</string>
+    <string name="appointment_delete_confirm">Вы уверены, что хотите удалить эту запись?</string>
+
+    <!-- Appointment Statuses -->
+    <string name="status_confirmed">Подтверждена</string>
+    <string name="status_pending">Ожидает</string>
+    <string name="status_cancelled">Отменена</string>
+    <string name="status_no_show">Неявка</string>
+    <string name="status_completed">Завершена</string>
+
+    <!-- Services -->
+    <string name="services_title">Услуги</string>
+    <string name="services_add">Добавить услугу</string>
+    <string name="services_edit">Редактировать услугу</string>
+    <string name="service_name">Название услуги</string>
+    <string name="service_duration">Длительность</string>
+    <string name="service_price">Цена</string>
+    <string name="service_category">Категория</string>
+    <string name="service_description">Описание</string>
+    <string name="services_no_services">Услуги ещё не добавлены</string>
+
+    <!-- Payment -->
+    <string name="payment_cash">Наличные</string>
+    <string name="payment_card">Карта</string>
+    <string name="payment_paid">Оплачено</string>
+    <string name="payment_unpaid">Не оплачено</string>
+    <string name="payment_method">Способ оплаты</string>
+    <string name="payment_amount">Сумма</string>
+    <string name="payment_status">Статус оплаты</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Настройки</string>
+    <string name="settings_salon_profile">Профиль салона</string>
+    <string name="settings_salon_name">Название салона</string>
+    <string name="settings_salon_address">Адрес</string>
+    <string name="settings_salon_phone">Телефон</string>
+    <string name="settings_working_hours">Рабочие часы</string>
+    <string name="settings_theme">Тема</string>
+    <string name="settings_language">Язык</string>
+    <string name="settings_notifications">Уведомления</string>
+    <string name="settings_notifications_push">Push-уведомления</string>
+    <string name="settings_notifications_email">Email-уведомления</string>
+    <string name="settings_notifications_sms">SMS-уведомления</string>
+    <string name="settings_notifications_reminders">Напоминания о записях</string>
+    <string name="settings_account">Аккаунт</string>
+    <string name="settings_sign_out">Выйти</string>
+    <string name="settings_sign_out_confirm">Вы уверены, что хотите выйти?</string>
+    <string name="settings_delete_account">Удалить аккаунт</string>
+    <string name="settings_delete_account_confirm">Это действие необратимо. Все ваши данные будут удалены.</string>
+    <string name="settings_about">О приложении</string>
+    <string name="settings_version">Версия</string>
+    <string name="settings_rate_app">Оценить приложение</string>
+    <string name="settings_feedback">Отправить отзыв</string>
+    <string name="settings_privacy_policy">Политика конфиденциальности</string>
+    <string name="settings_terms_of_service">Условия использования</string>
+
+    <!-- Theme Names -->
+    <string name="theme_classic">Классический (Женский)</string>
+    <string name="theme_modern">Современный (Мужской)</string>
+    <string name="theme_system">Системная тема</string>
+
+    <!-- Language Names -->
+    <string name="lang_english">English</string>
+    <string name="lang_polish">Polski</string>
+    <string name="lang_russian">Русский</string>
+    <string name="lang_ukrainian">Українська</string>
+    <string name="lang_czech">Čeština</string>
+    <string name="lang_slovak">Slovenčina</string>
+    <string name="lang_hungarian">Magyar</string>
+    <string name="lang_german">Deutsch</string>
+
+    <!-- Common Actions -->
+    <string name="action_save">Сохранить</string>
+    <string name="action_cancel">Отмена</string>
+    <string name="action_delete">Удалить</string>
+    <string name="action_edit">Редактировать</string>
+    <string name="action_back">Назад</string>
+    <string name="action_done">Готово</string>
+    <string name="action_search">Поиск</string>
+    <string name="action_confirm">Подтвердить</string>
+    <string name="action_retry">Повторить</string>
+    <string name="action_ok">ОК</string>
+    <string name="action_yes">Да</string>
+    <string name="action_no">Нет</string>
+    <string name="action_close">Закрыть</string>
+    <string name="action_add">Добавить</string>
+    <string name="action_remove">Удалить</string>
+    <string name="action_select">Выбрать</string>
+    <string name="action_continue">Продолжить</string>
+    <string name="action_apply">Применить</string>
+    <string name="action_clear">Очистить</string>
+    <string name="action_refresh">Обновить</string>
+    <string name="action_share">Поделиться</string>
+    <string name="action_copy">Копировать</string>
+    <string name="action_call">Позвонить</string>
+    <string name="action_message">Сообщение</string>
+
+    <!-- Common Labels -->
+    <string name="label_loading">Загрузка…</string>
+    <string name="label_error">Ошибка</string>
+    <string name="label_no_results">Нет результатов</string>
+    <string name="label_required">Обязательно</string>
+    <string name="label_optional">Необязательно</string>
+    <string name="label_or">или</string>
+    <string name="label_from">От</string>
+    <string name="label_to">До</string>
+    <string name="label_all">Все</string>
+    <string name="label_none">Нет</string>
+    <string name="label_other">Другое</string>
+    <string name="label_currency_symbol">₽</string>
+
+    <!-- Validation Errors -->
+    <string name="validation_email_required">Введите email</string>
+    <string name="validation_email_invalid">Некорректный email</string>
+    <string name="validation_password_required">Введите пароль</string>
+    <string name="validation_password_short">Пароль должен содержать минимум 6 символов</string>
+    <string name="validation_passwords_mismatch">Пароли не совпадают</string>
+    <string name="validation_name_required">Введите имя</string>
+    <string name="validation_phone_required">Введите номер телефона</string>
+    <string name="validation_phone_invalid">Некорректный номер телефона</string>
+    <string name="validation_field_required">Это поле обязательно</string>
+    <string name="validation_date_required">Выберите дату</string>
+    <string name="validation_time_required">Выберите время</string>
+    <string name="validation_service_required">Выберите услугу</string>
+    <string name="validation_client_required">Выберите клиента</string>
+
+    <!-- Error Messages -->
+    <string name="error_network">Ошибка сети. Проверьте подключение.</string>
+    <string name="error_generic">Что-то пошло не так. Попробуйте снова.</string>
+    <string name="error_session_expired">Сессия истекла. Войдите снова.</string>
+    <string name="error_unauthorized">У вас нет прав для выполнения этого действия.</string>
+    <string name="error_not_found">Запрашиваемый элемент не найден.</string>
+    <string name="error_server">Ошибка сервера. Попробуйте позже.</string>
+    <string name="error_timeout">Время ожидания истекло. Попробуйте снова.</string>
+    <string name="error_invalid_credentials">Неверный email или пароль.</string>
+    <string name="error_account_exists">Аккаунт с таким email уже существует.</string>
+    <string name="error_too_many_requests">Слишком много запросов. Подождите немного.</string>
+
+    <!-- Time -->
+    <string name="time_h">ч</string>
+    <string name="time_min">мин</string>
+    <string name="time_today">Сегодня</string>
+    <string name="time_yesterday">Вчера</string>
+    <string name="time_tomorrow">Завтра</string>
+    <string name="time_just_now">Только что</string>
+    <string name="time_minutes_ago">%1$d мин назад</string>
+    <string name="time_hours_ago">%1$d ч назад</string>
+    <string name="time_days_ago">%1$d дн. назад</string>
+
+    <!-- Empty States -->
+    <string name="empty_appointments">Нет запланированных записей</string>
+    <string name="empty_clients">Список клиентов пуст</string>
+    <string name="empty_services">Услуги не настроены</string>
+    <string name="empty_requests">Нет заявок на запись</string>
+    <string name="empty_history">История недоступна</string>
+    <string name="empty_notes">Заметки не добавлены</string>
+
+    <!-- Notifications -->
+    <string name="notification_new_booking">Новая заявка на запись</string>
+    <string name="notification_appointment_reminder">Напоминание о записи</string>
+    <string name="notification_appointment_cancelled">Запись отменена</string>
+    <string name="notification_channel_bookings">Бронирования</string>
+    <string name="notification_channel_reminders">Напоминания</string>
+    <string name="notification_channel_general">Общие</string>
+
+    <!-- Accessibility -->
+    <string name="a11y_navigate_back">Вернуться назад</string>
+    <string name="a11y_open_menu">Открыть меню</string>
+    <string name="a11y_close_menu">Закрыть меню</string>
+    <string name="a11y_loading">Загрузка контента</string>
+    <string name="a11y_avatar">Аватар пользователя</string>
+    <string name="a11y_logo">Логотип Brelio</string>
+</resources>
