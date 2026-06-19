@@ -20,6 +20,7 @@ android {
 
 dependencies {
     implementation(project(":domain"))
+    implementation(project(":data"))
     implementation(project(":core:designsystem"))
     implementation(project(":core:common"))
 
@@ -34,4 +35,3 @@ dependencies {
     implementation(libs.hilt.navigation.compose)
     ksp(libs.hilt.compiler)
 }
-    implementation(project(":data"))
