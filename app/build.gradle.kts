@@ -8,9 +8,12 @@ plugins {
     alias(libs.plugins.google.services)
 }
 
-val localProps = java.util.Properties().apply {
-    val f = rootProject.file("local.properties")
-    if (f.exists()) load(f.inputStream())
+import java.util.Properties
+import java.io.FileInputStream
+
+val localProps = Properties()
+rootProject.file("local.properties").takeIf { it.exists() }?.let {
+    localProps.load(FileInputStream(it))
 }
 
 android {
