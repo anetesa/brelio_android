@@ -61,6 +61,7 @@ dependencies {
     implementation(composeBom)
     implementation(libs.compose.ui)
     implementation(libs.compose.material3)
+    implementation(libs.compose.material.icons)
     debugImplementation(libs.compose.ui.tooling)
 
     implementation(libs.navigation.compose)

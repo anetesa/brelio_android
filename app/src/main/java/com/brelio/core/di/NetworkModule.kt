@@ -24,6 +24,7 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import java.util.concurrent.TimeUnit
+import javax.inject.Named
 import javax.inject.Singleton
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "brelio_prefs")
@@ -31,6 +32,14 @@ private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(na
 @Module
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
+
+    @Provides
+    @Named("supabase_url")
+    fun provideSupabaseUrl(): String = BuildConfig.SUPABASE_URL
+
+    @Provides
+    @Named("supabase_anon_key")
+    fun provideSupabaseAnonKey(): String = BuildConfig.SUPABASE_ANON_KEY
 
     @Provides
     @Singleton

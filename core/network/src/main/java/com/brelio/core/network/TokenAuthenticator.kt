@@ -1,6 +1,5 @@
 package com.brelio.core.network
 
-import com.brelio.BuildConfig
 import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
@@ -13,11 +12,14 @@ import okhttp3.RequestBody.Companion.toRequestBody
 import okhttp3.Response
 import okhttp3.Route
 import javax.inject.Inject
+import javax.inject.Named
 import javax.inject.Singleton
 
 @Singleton
 class TokenAuthenticator @Inject constructor(
     private val authTokenManager: AuthTokenManager,
+    @Named("supabase_url") private val supabaseUrl: String,
+    @Named("supabase_anon_key") private val anonKey: String,
 ) : Authenticator {
 
     private val json = Json { ignoreUnknownKeys = true }
@@ -49,15 +51,16 @@ class TokenAuthenticator @Inject constructor(
 
     private fun refreshAccessToken(refreshToken: String): TokenResponse? {
         return try {
-            val url = "${BuildConfig.SUPABASE_URL}/auth/v1/token?grant_type=refresh_token"
+            val url = "$supabaseUrl/auth/v1/token?grant_type=refresh_token"
             val body = json.encodeToString(
+                RefreshRequest.serializer(),
                 RefreshRequest(refreshToken = refreshToken),
             ).toRequestBody(JSON_MEDIA_TYPE)
 
             val request = Request.Builder()
                 .url(url)
                 .post(body)
-                .addHeader(HEADER_API_KEY, BuildConfig.SUPABASE_ANON_KEY)
+                .addHeader(HEADER_API_KEY, anonKey)
                 .addHeader(HEADER_CONTENT_TYPE, CONTENT_TYPE_JSON)
                 .build()
 
