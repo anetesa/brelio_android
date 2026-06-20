@@ -8,6 +8,11 @@ plugins {
     alias(libs.plugins.google.services)
 }
 
+val localProps = java.util.Properties().apply {
+    val f = rootProject.file("local.properties")
+    if (f.exists()) load(f.inputStream())
+}
+
 android {
     namespace = "com.brelio"
     compileSdk = 35
@@ -19,9 +24,9 @@ android {
         versionCode = 1
         versionName = "1.0.0"
 
-        buildConfigField("String", "SUPABASE_URL", "\"${project.findProperty("SUPABASE_URL") ?: ""}\"")
-        buildConfigField("String", "SUPABASE_ANON_KEY", "\"${project.findProperty("SUPABASE_ANON_KEY") ?: ""}\"")
-        buildConfigField("String", "STRIPE_PUBLISHABLE_KEY", "\"${project.findProperty("STRIPE_PUBLISHABLE_KEY") ?: ""}\"")
+        buildConfigField("String", "SUPABASE_URL", "\"${localProps["SUPABASE_URL"] ?: ""}\"")
+        buildConfigField("String", "SUPABASE_ANON_KEY", "\"${localProps["SUPABASE_ANON_KEY"] ?: ""}\"")
+        buildConfigField("String", "STRIPE_PUBLISHABLE_KEY", "\"${localProps["STRIPE_PUBLISHABLE_KEY"] ?: ""}\"")
     }
 
     buildTypes {
