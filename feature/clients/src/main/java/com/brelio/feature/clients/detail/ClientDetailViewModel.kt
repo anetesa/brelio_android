@@ -22,39 +22,18 @@ class ClientDetailViewModel @Inject constructor(
 
     override fun onEvent(event: ClientDetailEvent) {
         when (event) {
-            is ClientDetailEvent.DeleteClicked -> {
-                sendEffect(ClientDetailEffect.ShowDeleteConfirmation)
-            }
-            is ClientDetailEvent.ConfirmDelete -> deleteClient()
-            is ClientDetailEvent.BackClicked -> {
-                sendEffect(ClientDetailEffect.NavigateBack)
-            }
+            ClientDetailEvent.DeleteClicked -> sendEffect(ClientDetailEffect.ShowDeleteConfirmation)
+            ClientDetailEvent.ConfirmDelete -> deleteClient()
+            ClientDetailEvent.BackClicked -> sendEffect(ClientDetailEffect.NavigateBack)
         }
     }
 
     private fun loadClient() {
         viewModelScope.launch {
             setState { copy(isLoading = true, error = null) }
-
-            clientRepository.getClientById(clientId)
-                .onSuccess { dto ->
-                    if (dto != null) {
-                        val client = com.brelio.domain.model.Client(
-                            id = dto.id,
-                            name = dto.name,
-                            phone = dto.phone,
-                            email = dto.email,
-                            avatarUrl = dto.avatarUrl,
-                            notes = dto.notes,
-                            birthday = dto.birthday,
-                            tags = dto.tags.orEmpty(),
-                            noShowCount = dto.noShowCount ?: 0,
-                            createdAt = dto.createdAt.orEmpty(),
-                        )
-                        setState { copy(isLoading = false, client = client) }
-                    } else {
-                        setState { copy(isLoading = false, error = "Client not found") }
-                    }
+            clientRepository.getClient(clientId)
+                .onSuccess { client ->
+                    setState { copy(isLoading = false, client = client) }
                 }
                 .onFailure { throwable ->
                     setState { copy(isLoading = false, error = throwable.message) }
@@ -65,11 +44,9 @@ class ClientDetailViewModel @Inject constructor(
     private fun deleteClient() {
         viewModelScope.launch {
             clientRepository.deleteClient(clientId)
-                .onSuccess {
-                    sendEffect(ClientDetailEffect.NavigateBack)
-                }
+                .onSuccess { sendEffect(ClientDetailEffect.NavigateBack) }
                 .onFailure { throwable ->
-                    sendEffect(ClientDetailEffect.ShowError(throwable.message ?: "Delete failed"))
+                    sendEffect(ClientDetailEffect.ShowError(throwable.message.orEmpty()))
                 }
         }
     }

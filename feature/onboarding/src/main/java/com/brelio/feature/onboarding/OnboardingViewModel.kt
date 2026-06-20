@@ -35,7 +35,7 @@ class OnboardingViewModel @Inject constructor(
 
     private fun completeOnboarding() {
         viewModelScope.launch {
-            preferencesManager.setOnboarded(true)
+            preferencesManager.setOnboarded()
             sendEffect(OnboardingEffect.NavigateToSignIn)
         }
     }

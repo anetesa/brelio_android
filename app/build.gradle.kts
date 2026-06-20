@@ -77,5 +77,6 @@ dependencies {
     implementation(libs.coroutines.android)
     implementation(libs.retrofit)
     implementation(libs.okhttp)
+    implementation(libs.okhttp.logging)
     implementation(libs.retrofit.kotlinx.serialization)
 }

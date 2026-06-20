@@ -33,7 +33,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.brelio.R
+import com.brelio.core.designsystem.R
 import com.brelio.core.network.AuthTokenManager
 import com.brelio.core.ui.LoadingScreen
 import com.brelio.data.local.PreferencesManager
