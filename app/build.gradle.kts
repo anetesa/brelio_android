@@ -30,6 +30,7 @@ android {
         buildConfigField("String", "SUPABASE_URL", "\"${localProps["SUPABASE_URL"] ?: ""}\"")
         buildConfigField("String", "SUPABASE_ANON_KEY", "\"${localProps["SUPABASE_ANON_KEY"] ?: ""}\"")
         buildConfigField("String", "STRIPE_PUBLISHABLE_KEY", "\"${localProps["STRIPE_PUBLISHABLE_KEY"] ?: ""}\"")
+        buildConfigField("String", "GOOGLE_WEB_CLIENT_ID", "\"${localProps["GOOGLE_WEB_CLIENT_ID"] ?: "933199349246-8hc7sc0g0qrss8u3bjjlk3vk15h7lak3.apps.googleusercontent.com"}\"")
     }
 
     buildTypes {

@@ -4,6 +4,7 @@ import com.brelio.data.remote.dto.AuthResponse
 import com.brelio.data.remote.dto.RefreshTokenRequest
 import com.brelio.data.remote.dto.ResetPasswordRequest
 import com.brelio.data.remote.dto.SignInRequest
+import com.brelio.data.remote.dto.IdTokenRequest
 import com.brelio.data.remote.dto.SignUpRequest
 import retrofit2.http.Body
 import retrofit2.http.Header
@@ -25,6 +26,12 @@ interface AuthApi {
     suspend fun refreshToken(
         @Query("grant_type") grantType: String = "refresh_token",
         @Body body: RefreshTokenRequest,
+    ): AuthResponse
+
+    @POST("auth/v1/token")
+    suspend fun signInWithIdToken(
+        @Query("grant_type") grantType: String = "id_token",
+        @Body body: IdTokenRequest,
     ): AuthResponse
 
     @POST("auth/v1/recover")

@@ -3,6 +3,7 @@ package com.brelio.data.repository
 import com.brelio.core.network.AuthTokenManager
 import com.brelio.data.local.SessionManager
 import com.brelio.data.remote.api.AuthApi
+import com.brelio.data.remote.dto.IdTokenRequest
 import com.brelio.data.remote.dto.ResetPasswordRequest
 import com.brelio.data.remote.dto.SignInRequest
 import com.brelio.data.remote.dto.SignUpRequest
@@ -26,6 +27,20 @@ class AuthRepositoryImpl @Inject constructor(
     override suspend fun signIn(email: String, password: String): Result<Session> {
         return runCatching {
             val response = authApi.signIn(body = SignInRequest(email, password))
+            val session = Session(
+                accessToken = response.accessToken,
+                refreshToken = response.refreshToken,
+                userId = response.user.id,
+                email = response.user.email.orEmpty(),
+            )
+            sessionManager.saveSession(session)
+            session
+        }
+    }
+
+    override suspend fun signInWithIdToken(provider: String, idToken: String): Result<Session> {
+        return runCatching {
+            val response = authApi.signInWithIdToken(body = IdTokenRequest(provider, idToken))
             val session = Session(
                 accessToken = response.accessToken,
                 refreshToken = response.refreshToken,

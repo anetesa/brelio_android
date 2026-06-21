@@ -42,6 +42,10 @@ object NetworkModule {
     fun provideSupabaseAnonKey(): String = BuildConfig.SUPABASE_ANON_KEY
 
     @Provides
+    @Named("google_web_client_id")
+    fun provideGoogleWebClientId(): String = BuildConfig.GOOGLE_WEB_CLIENT_ID
+
+    @Provides
     @Singleton
     fun provideDataStore(
         @ApplicationContext context: Context,

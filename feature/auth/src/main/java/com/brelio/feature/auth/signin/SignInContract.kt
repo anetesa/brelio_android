@@ -13,6 +13,7 @@ sealed interface SignInEvent {
     data class PasswordChanged(val password: String) : SignInEvent
     data object SignInClicked : SignInEvent
     data object GoogleSignInClicked : SignInEvent
+    data class GoogleIdTokenReceived(val idToken: String) : SignInEvent
     data object ForgotPasswordClicked : SignInEvent
     data object SignUpClicked : SignInEvent
 }
@@ -21,5 +22,6 @@ sealed interface SignInEffect {
     data object NavigateToHome : SignInEffect
     data object NavigateToSignUp : SignInEffect
     data object NavigateToResetPassword : SignInEffect
+    data class LaunchGoogleSignIn(val webClientId: String) : SignInEffect
     data class ShowError(val message: String) : SignInEffect
 }

@@ -21,6 +21,12 @@ data class RefreshTokenRequest(
 )
 
 @Serializable
+data class IdTokenRequest(
+    val provider: String,
+    @SerialName("id_token") val idToken: String,
+)
+
+@Serializable
 data class ResetPasswordRequest(
     val email: String,
 )

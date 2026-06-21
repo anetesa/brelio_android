@@ -44,6 +44,7 @@ fun SignInScreen(
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
     val snackbarHostState = remember { SnackbarHostState() }
+    val context = androidx.compose.ui.platform.LocalContext.current
 
     LaunchedEffect(Unit) {
         viewModel.effect.collect { effect ->
@@ -51,6 +52,11 @@ fun SignInScreen(
                 SignInEffect.NavigateToHome -> onNavigateToHome()
                 SignInEffect.NavigateToSignUp -> onNavigateToSignUp()
                 SignInEffect.NavigateToResetPassword -> onNavigateToResetPassword()
+                is SignInEffect.LaunchGoogleSignIn -> {
+                    launchGoogleSignIn(context, effect.webClientId) { idToken ->
+                        viewModel.onEvent(SignInEvent.GoogleIdTokenReceived(idToken))
+                    }
+                }
                 is SignInEffect.ShowError -> snackbarHostState.showSnackbar(effect.message)
             }
         }
@@ -185,5 +191,28 @@ fun SignInScreen(
                 Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_xxl)))
             }
         }
+    }
+}
+
+private suspend fun launchGoogleSignIn(
+    context: android.content.Context,
+    webClientId: String,
+    onToken: (String) -> Unit,
+) {
+    try {
+        val credentialManager = androidx.credentials.CredentialManager.create(context)
+        val googleIdOption = com.google.android.libraries.identity.googleid.GetGoogleIdOption.Builder()
+            .setFilterByAuthorizedAccounts(false)
+            .setServerClientId(webClientId)
+            .build()
+        val request = androidx.credentials.GetCredentialRequest.Builder()
+            .addCredentialOption(googleIdOption)
+            .build()
+        val result = credentialManager.getCredential(context as android.app.Activity, request)
+        val googleIdToken = com.google.android.libraries.identity.googleid
+            .GoogleIdTokenCredential.createFrom(result.credential.data)
+        onToken(googleIdToken.idToken)
+    } catch (_: Exception) {
+        // User cancelled or no Google accounts
     }
 }
