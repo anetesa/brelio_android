@@ -30,13 +30,8 @@ class SignUpViewModel @Inject constructor(
 
             SignUpEvent.SignUpClicked -> handleSignUp()
 
-            SignUpEvent.GoogleSignUpClicked -> {
-                // TODO: Google Sign-Up integration
-            }
-
-            SignUpEvent.SignInClicked -> {
-                sendEffect(SignUpEffect.NavigateToSignIn)
-            }
+            SignUpEvent.GoogleSignUpClicked -> sendEffect(SignUpEffect.NavigateToSignIn)
+            SignUpEvent.SignInClicked -> sendEffect(SignUpEffect.NavigateToSignIn)
         }
     }
 

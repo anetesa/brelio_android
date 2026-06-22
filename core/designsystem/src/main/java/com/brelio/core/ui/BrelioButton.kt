@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.brelio.core.designsystem.R
 
@@ -62,4 +63,16 @@ fun BrelioOutlinedButton(
             style = MaterialTheme.typography.labelLarge,
         )
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun BrelioButtonPreview() {
+    BrelioButton(text = "Sign In", onClick = {})
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun BrelioButtonLoadingPreview() {
+    BrelioButton(text = "Sign In", onClick = {}, isLoading = true)
 }

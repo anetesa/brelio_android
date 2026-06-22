@@ -17,10 +17,13 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import com.brelio.core.designsystem.R
 import com.brelio.core.ui.BrelioCard
 import com.brelio.domain.model.Appointment
 import com.brelio.domain.model.AppointmentStatus
+import com.brelio.domain.model.PaymentStatus
+import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
 private val TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm")
@@ -118,4 +121,27 @@ private fun StatusChip(
             fontWeight = FontWeight.SemiBold,
         )
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun AppointmentRowPreview() {
+    AppointmentRow(
+        appointment = Appointment(
+            id = "1",
+            clientId = "c1",
+            clientName = "Anna Kowalska",
+            stylistId = null,
+            stylistName = null,
+            serviceName = "Strzyżenie damskie",
+            startAt = LocalDateTime.of(2026, 6, 20, 10, 0),
+            endAt = LocalDateTime.of(2026, 6, 20, 11, 0),
+            status = AppointmentStatus.Confirmed,
+            notes = null,
+            paymentStatus = PaymentStatus.Unpaid,
+            paymentMethod = null,
+            services = emptyList(),
+        ),
+        onClick = {},
+    )
 }

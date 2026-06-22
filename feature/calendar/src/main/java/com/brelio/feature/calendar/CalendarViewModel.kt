@@ -23,24 +23,18 @@ class CalendarViewModel @Inject constructor(
 
     override fun onEvent(event: CalendarEvent) {
         when (event) {
-            is CalendarEvent.DateSelected -> {
-                setState { copy(selectedDate = event.date) }
-                loadAppointments(event.date)
-            }
-            is CalendarEvent.NextDay -> {
-                val next = currentState.selectedDate.plusDays(1)
-                setState { copy(selectedDate = next) }
-                loadAppointments(next)
-            }
-            is CalendarEvent.PreviousDay -> {
-                val prev = currentState.selectedDate.minusDays(1)
-                setState { copy(selectedDate = prev) }
-                loadAppointments(prev)
-            }
-            is CalendarEvent.AppointmentClicked -> {
+            is CalendarEvent.DateSelected -> navigateToDate(event.date)
+            is CalendarEvent.NextDay -> navigateToDate(currentState.selectedDate.plusDays(1))
+            is CalendarEvent.PreviousDay -> navigateToDate(currentState.selectedDate.minusDays(1))
+            is CalendarEvent.AppointmentClicked ->
                 sendEffect(CalendarEffect.NavigateToAppointment(event.appointmentId))
-            }
         }
+    }
+
+    private fun navigateToDate(date: LocalDate) {
+        if (date == currentState.selectedDate && !currentState.isLoading) return
+        setState { copy(selectedDate = date) }
+        loadAppointments(date)
     }
 
     private fun loadAppointments(date: LocalDate) {

@@ -26,20 +26,14 @@ class ClientsViewModel @Inject constructor(
         loadClients()
     }
 
-    override fun onEvent(event: ClientsEvent) {
-        when (event) {
-            is ClientsEvent.SearchQueryChanged -> {
-                setState { copy(searchQuery = event.query) }
-                debounceSearch(event.query)
-            }
-            is ClientsEvent.ClientClicked -> {
-                sendEffect(ClientsEffect.NavigateToDetail(event.clientId))
-            }
-            is ClientsEvent.AddClientClicked -> {
-                sendEffect(ClientsEffect.NavigateToAddClient)
-            }
-            is ClientsEvent.Refresh -> loadClients()
+    override fun onEvent(event: ClientsEvent) = when (event) {
+        is ClientsEvent.SearchQueryChanged -> {
+            setState { copy(searchQuery = event.query) }
+            debounceSearch(event.query)
         }
+        is ClientsEvent.ClientClicked -> sendEffect(ClientsEffect.NavigateToDetail(event.clientId))
+        is ClientsEvent.AddClientClicked -> sendEffect(ClientsEffect.NavigateToAddClient)
+        is ClientsEvent.Refresh -> loadClients()
     }
 
     private fun loadClients() {

@@ -12,6 +12,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import com.brelio.core.designsystem.R
 import com.brelio.core.ui.BrelioCard
 
@@ -45,4 +46,10 @@ fun StatCard(
             )
         }
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun StatCardPreview() {
+    StatCard(label = "Revenue", value = "1240")
 }

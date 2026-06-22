@@ -8,8 +8,10 @@ class SignInUseCase @Inject constructor(
     private val authRepository: AuthRepository,
 ) {
     suspend operator fun invoke(email: String, password: String): Result<Session> {
-        if (email.isBlank()) return Result.failure(IllegalArgumentException("Email required"))
-        if (password.length < 6) return Result.failure(IllegalArgumentException("Password too short"))
+        require(email.isNotBlank()) { "Email required" }
+        require(password.length >= MIN_PASSWORD_LENGTH) { "Password too short" }
         return authRepository.signIn(email.trim(), password)
     }
 }
+
+private const val MIN_PASSWORD_LENGTH = 6

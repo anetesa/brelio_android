@@ -213,6 +213,6 @@ private suspend fun launchGoogleSignIn(
             .GoogleIdTokenCredential.createFrom(result.credential.data)
         onToken(googleIdToken.idToken)
     } catch (_: Exception) {
-        // User cancelled or no Google accounts
+        // cancelled by user or no accounts configured
     }
 }

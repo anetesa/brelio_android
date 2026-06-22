@@ -18,6 +18,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
 import coil.compose.AsyncImage
 import com.brelio.core.designsystem.R
+import androidx.compose.ui.tooling.preview.Preview
 import kotlin.math.absoluteValue
 
 @Composable
@@ -79,4 +80,10 @@ private val AVATAR_COLORS = listOf(
 private fun avatarColorFromName(name: String): Color {
     val hash = name.hashCode().absoluteValue
     return AVATAR_COLORS[hash % AVATAR_COLORS.size]
+}
+
+@Preview
+@Composable
+private fun ClientAvatarPreview() {
+    ClientAvatar(name = "Anna Kowalska", avatarUrl = null)
 }
