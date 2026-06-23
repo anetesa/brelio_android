@@ -18,30 +18,25 @@ class SettingsViewModel @Inject constructor(
         observePreferences()
     }
 
-    override fun onEvent(event: SettingsEvent) {
-        when (event) {
-            is SettingsEvent.ThemeChanged -> {
-                viewModelScope.launch {
-                    preferencesManager.setThemeMode(event.mode)
-                }
-            }
-            is SettingsEvent.LanguageChanged -> {
-                setState { copy(languageCode = event.code) }
-                sendEffect(SettingsEffect.RestartApp)
-            }
-            is SettingsEvent.SignOutClicked -> {
-                setState { copy(showSignOutDialog = true) }
-            }
-            is SettingsEvent.ConfirmSignOut -> {
-                setState { copy(showSignOutDialog = false) }
-                viewModelScope.launch {
-                    signOutUseCase()
-                    sendEffect(SettingsEffect.NavigateToSignIn)
-                }
-            }
-            is SettingsEvent.DismissDialog -> {
-                setState { copy(showSignOutDialog = false) }
-            }
+    override fun onEvent(event: SettingsEvent) = when (event) {
+        is SettingsEvent.ThemeChanged -> viewModelScope.launch {
+            preferencesManager.setThemeMode(event.mode)
+        }.let { }
+        is SettingsEvent.LanguageChanged -> {
+            setState { copy(languageCode = event.code) }
+            viewModelScope.launch { preferencesManager.setLanguage(event.code) }
+            sendEffect(SettingsEffect.RestartApp)
+        }
+        is SettingsEvent.SignOutClicked -> setState { copy(showSignOutDialog = true) }
+        is SettingsEvent.ConfirmSignOut -> performSignOut()
+        is SettingsEvent.DismissDialog -> setState { copy(showSignOutDialog = false) }
+    }
+
+    private fun performSignOut() {
+        setState { copy(showSignOutDialog = false) }
+        viewModelScope.launch {
+            signOutUseCase()
+            sendEffect(SettingsEffect.NavigateToSignIn)
         }
     }
 

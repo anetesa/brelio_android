@@ -58,12 +58,12 @@ class AppointmentRepositoryImpl @Inject constructor(
             stylistId = stylistId,
             stylistName = stylists?.name,
             serviceName = services.firstOrNull()?.serviceName,
-            startAt = parseDateTime(startAt),
-            endAt = parseDateTime(endAt),
-            status = parseStatus(status),
+            startAt = startAt.toLocalDateTimeOrMin(),
+            endAt = endAt.toLocalDateTimeOrMin(),
+            status = status.toAppointmentStatus(),
             notes = notes,
-            paymentStatus = parsePaymentStatus(paymentStatus),
-            paymentMethod = parsePaymentMethod(paymentMethod),
+            paymentStatus = paymentStatus.toPaymentStatus(),
+            paymentMethod = paymentMethod.toPaymentMethod(),
             services = services.map { svc ->
                 AppointmentService(
                     id = svc.id,
@@ -75,35 +75,25 @@ class AppointmentRepositoryImpl @Inject constructor(
         )
     }
 
-    private fun parseDateTime(raw: String): LocalDateTime {
-        return runCatching {
-            LocalDateTime.parse(raw, DateTimeFormatter.ISO_DATE_TIME)
-        }.getOrDefault(LocalDateTime.MIN)
+    private fun String.toLocalDateTimeOrMin(): LocalDateTime =
+        runCatching { LocalDateTime.parse(this, DateTimeFormatter.ISO_DATE_TIME) }
+            .getOrDefault(LocalDateTime.MIN)
+
+    private fun String.toAppointmentStatus() = when (lowercase()) {
+        "confirmed" -> AppointmentStatus.Confirmed
+        "completed" -> AppointmentStatus.Completed
+        "cancelled" -> AppointmentStatus.Cancelled
+        "no_show" -> AppointmentStatus.NoShow
+        else -> AppointmentStatus.Pending
     }
 
-    private fun parseStatus(raw: String): AppointmentStatus {
-        return when (raw.lowercase()) {
-            "confirmed" -> AppointmentStatus.Confirmed
-            "completed" -> AppointmentStatus.Completed
-            "cancelled" -> AppointmentStatus.Cancelled
-            "no_show" -> AppointmentStatus.NoShow
-            else -> AppointmentStatus.Pending
-        }
-    }
+    private fun String?.toPaymentStatus() =
+        if (this == "paid") PaymentStatus.Paid else PaymentStatus.Unpaid
 
-    private fun parsePaymentStatus(raw: String?): PaymentStatus {
-        return when (raw?.lowercase()) {
-            "paid" -> PaymentStatus.Paid
-            else -> PaymentStatus.Unpaid
-        }
-    }
-
-    private fun parsePaymentMethod(raw: String?): PaymentMethod? {
-        return when (raw?.lowercase()) {
-            "cash" -> PaymentMethod.Cash
-            "card" -> PaymentMethod.Card
-            else -> null
-        }
+    private fun String?.toPaymentMethod() = when (this) {
+        "cash" -> PaymentMethod.Cash
+        "card" -> PaymentMethod.Card
+        else -> null
     }
 
     private companion object {

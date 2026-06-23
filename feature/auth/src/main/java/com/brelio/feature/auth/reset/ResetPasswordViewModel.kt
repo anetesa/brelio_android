@@ -51,11 +51,7 @@ class ResetPasswordViewModel @Inject constructor(
                 }
                 .onFailure { exception ->
                     setState { copy(isLoading = false) }
-                    sendEffect(
-                        ResetPasswordEffect.ShowError(
-                            exception.message ?: "Password reset failed"
-                        )
-                    )
+                    sendEffect(ResetPasswordEffect.ShowError(exception.localizedMessage.orEmpty()))
                 }
         }
     }

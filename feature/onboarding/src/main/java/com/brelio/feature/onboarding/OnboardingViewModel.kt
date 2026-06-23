@@ -12,28 +12,20 @@ class OnboardingViewModel @Inject constructor(
     private val preferencesManager: PreferencesManager,
 ) : MviViewModel<OnboardingState, OnboardingEvent, OnboardingEffect>(OnboardingState()) {
 
+    val isLastPage get() = currentState.currentPage == currentState.pageCount - 1
+
     override fun onEvent(event: OnboardingEvent) {
         when (event) {
-            is OnboardingEvent.PageChanged -> setState {
-                copy(currentPage = event.page)
-            }
-
-            OnboardingEvent.NextClicked -> {
-                val nextPage = currentState.currentPage + 1
-                if (nextPage < currentState.pageCount) {
-                    setState { copy(currentPage = nextPage) }
-                } else {
-                    completeOnboarding()
-                }
-            }
-
-            OnboardingEvent.SkipClicked -> completeOnboarding()
-
-            OnboardingEvent.GetStartedClicked -> completeOnboarding()
+            is OnboardingEvent.PageChanged -> setState { copy(currentPage = event.page) }
+            OnboardingEvent.NextClicked -> if (isLastPage) finish() else advancePage()
+            OnboardingEvent.SkipClicked,
+            OnboardingEvent.GetStartedClicked -> finish()
         }
     }
 
-    private fun completeOnboarding() {
+    private fun advancePage() = setState { copy(currentPage = currentPage + 1) }
+
+    private fun finish() {
         viewModelScope.launch {
             preferencesManager.setOnboarded()
             sendEffect(OnboardingEffect.NavigateToSignIn)

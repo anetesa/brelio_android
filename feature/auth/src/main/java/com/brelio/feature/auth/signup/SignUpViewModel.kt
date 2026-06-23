@@ -75,7 +75,7 @@ class SignUpViewModel @Inject constructor(
                     setState { copy(isLoading = false) }
                     sendEffect(
                         SignUpEffect.ShowError(
-                            exception.message ?: "Registration failed"
+                            exception.localizedMessage.orEmpty()
                         )
                     )
                 }

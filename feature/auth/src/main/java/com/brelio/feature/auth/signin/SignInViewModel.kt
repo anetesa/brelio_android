@@ -40,7 +40,7 @@ class SignInViewModel @Inject constructor(
                 .onSuccess { sendEffect(SignInEffect.NavigateToHome) }
                 .onFailure { e ->
                     setState { copy(isLoading = false) }
-                    sendEffect(SignInEffect.ShowError(e.message ?: "Google sign-in failed"))
+                    sendEffect(SignInEffect.ShowError(e.localizedMessage.orEmpty()))
                 }
         }
     }
@@ -63,7 +63,7 @@ class SignInViewModel @Inject constructor(
                 .onSuccess { sendEffect(SignInEffect.NavigateToHome) }
                 .onFailure { e ->
                     setState { copy(isLoading = false) }
-                    sendEffect(SignInEffect.ShowError(e.message ?: "Authentication failed"))
+                    sendEffect(SignInEffect.ShowError(e.localizedMessage.orEmpty()))
                 }
         }
     }
