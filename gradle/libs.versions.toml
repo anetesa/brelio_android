@@ -73,6 +73,15 @@ credential-manager = { group = "androidx.credentials", name = "credentials", ver
 credential-manager-play-services = { group = "androidx.credentials", name = "credentials-play-services-auth", version.ref = "credential-manager" }
 google-id = { group = "com.google.android.libraries.identity.googleid", name = "googleid", version = "1.1.1" }
 
+# Testing
+junit = { group = "junit", name = "junit", version = "4.13.2" }
+mockk = { group = "io.mockk", name = "mockk", version = "1.13.13" }
+turbine = { group = "app.cash.turbine", name = "turbine", version = "1.2.0" }
+coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
+compose-ui-test = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
